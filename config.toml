@@ -1,0 +1,6 @@
+baseURL = "https://jeromie.github.io/portfolio"
+languageCode = "en-us"
+title = "ajency.in"
+theme = "portfolio"
+publishDir = "docs"
+disableFastRender = true
