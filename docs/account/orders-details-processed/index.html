@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta 
+     name='viewport' 
+     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' 
+/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#707279" />
+    <link  rel="icon" type="image/x-icon" href="https://jeromie.github.io/kss/img/kss_favicon.png" />
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    
+    
+
+    <link rel="stylesheet" type="text/css" href="https://jeromie.github.io/kss/css/combine.css">
+
+    <title>orders-details-processed</title>
+  </head>
+  <body><div class="header">
+  <div class="container pl-2 pl-sm-0 pr-2 pr-sm-0">
+    <nav class="navbar navbar-expand-lg pl-1 pr-1 pb-0 pt-0">
+        <div class="navbar-toggler hamburger hamburger--collapse" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </div>
+        <a  href="#">
+    <img src="https://jeromie.github.io/kss/img/logo-kss.png" xpreview="https://jeromie.github.io/kss/img/logo-kss.png" class=" img-fluid m-0 kss-logo" width="180px">
+     </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-4 mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link font-weight-bold" href="#">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link font-weight-bold" href="#">
+                        Category
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/kss/boys/" class="nav-link font-weight-bold">
+                        Boys
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/kss/girls/" class="nav-link font-weight-bold">
+                        Girls
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/kss/infants/" class="nav-link font-weight-bold">
+                        Infants
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="#">
+                        Toons
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold" href="#">
+                        Sports
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="modal" data-target="#loginModal" class="nav-link font-weight-bold text-white">
+                       Sign in
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="my-2 my-lg-0">
+            <ul class="list-inline mb-2 pt-3">
+                <li class="list-inline-item">
+                  <i class="kss_icon search-icon"></i>
+
+                <form class="search-input" style="width: 22rem; display:none;">
+                     <input id="search" name="search" type="text" placeholder="What're we looking for ?" autocomplete="off">
+                      <span aria-hidden="true" class="hide-search h1 text-white">&times;</span>
+                </form>
+               <div class="card recent-search" style="width: 22rem; display:none;">
+                  <div class="card-header font-weight-bold">
+                    Recent Search
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <a href="#" class="recent-link text-black">
+                        New Born Baby Cloths
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" class="recent-link text-black">
+                         Infants Accessories
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" class="recent-link text-black">
+                        Best of Bath Accessories
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+                </li>
+                <li class="list-inline-item">
+                    <a href="/kss/account/overview">
+                        <i class="kss_icon profile-icon">
+                       </i>
+                    </a>
+                </li>
+                <li class="list-inline-item pr-0 ">
+                    <a id="cd-cart-trigger" href="#" class="shopping-cart">
+                       <i class="kss_icon bag-icon">
+                       </i>
+                       <span class="badge badge-light cart-counter d-none"><div id="output">0</div></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  </div>
+</div>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-12">
+				<div class="d-none d-md-block mb-4">
+					   <nav aria-label="breadcrumb">
+	                    <ol class="breadcrumb mb-1 bg-transparent p-0">
+	                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+	                        <li class="breadcrumb-item"><a href="/kss/account/orders/">Accounts</a></li>
+	                        <li class="breadcrumb-item active"><a href="#">Order Details</a></li>
+	                    </ol>
+	                  </nav>
+                 </div>
+                 	<div >
+                <div class="d-flex align-items-top top-navbar">
+		            <div class="pr-3">
+		            	<a href="/kss/account/orders/">
+		              <h4 id="back-to-orders" class="m-0 font-weight-bold kss_highlight">
+		                <img class="btn-back kss_highlight" src="https://jeromie.github.io/kss/img/left-arrow.png" style="width:20px;"/>
+		              </h4>
+		          </a>
+		            </div>
+		            <div class="">
+		              <h4 class="font-weight-bold m-0">Order Details</h4>
+		            </div>
+		             <div class="ml-auto d-none d-md-block">
+		              <button type="button" class="btn btn-outline-dark"><i class="fas fa-print"></i> Print Invoice</button>
+		            </div>
+		          </div>
+		       
+		      </div>
+              
+			</div>
+		</div>
+		<div class="row mt-0 mt-md-2">
+
+			<div class="col-12 col-xl-8 col-lg-8">
+				<hr>
+				<div class="row justify-content-end">
+					<div class="col">
+						Order No.
+					  	<h6 class="font-weight-bold mt-1 ">#ABCD-2134E-PQRS-02</h6>
+					</div>
+					<div class="col">
+						Total amount:
+					  	<h6 class="font-weight-bold mt-1"><span class="rs-symbol"><i class="fas fa-rupee-sign sm-font"></i></span> 869 for 1 item </h6>
+					</div>
+					<div class="col-xl-2 col-sm-3  mt-3 mt-md-0">
+						Placed on:
+					  	<h6 class="font-weight-bold mt-1 "><i class="far fa-calendar-alt"></i> 20 Aug 2018 </h6>
+					</div>
+
+				</div>
+				
+					<hr class="mb-5">
+					<div class="d-flex bd-highlight">
+					  <div class="pb-2 pr-5">
+					  	<label class="d-block m-0">Shipment Details</label>
+	<i class="fas fa-clipboard-check mr-1 text-muted"></i> <span class="text-success font-weight-bold">Order Processed</span>
+					  </div>
+					  <div class="pb-2 ml-auto">
+					  	Total:
+					  	<h6 class="mt-1"><span class="rs-symbol"><i class="fas fa-rupee-sign sm-font"></i></span> 869 for 1 item</h6>
+					  </div>
+					</div>
+				  <div id="kss_shipment" class="card shadow-sm mt-2 mb-5">
+				  <div class="card-body">
+				    <div class="primary-info  d-lg-flex d-xl-flex">
+					
+					<div class="kss_product_list flex-grow-1 pr-0 pr-md-4">
+						<a href="/kss/product/" class="text-black">
+							<div class="product-img">
+										<div class="img" style="background-image: url(https://jeromie.github.io/kss/img/4front.jpg);"></div>
+									</div>
+									<div class="product-detail">
+										<div class="product-name text-truncate">
+											Cotton Rich Super Skinny Fit Jeans
+										</div>
+										<div class="product-size text-muted mb-1">
+											<span>Size: 2-4 years</span> <span>|</span> <span>Qty: 1</span>
+										</div>
+										<div class="product-price">
+											<div class="retail-price">
+												<span class="rs-symbol"><i class="fas fa-rupee-sign sm-font"></i></span><span class="price">869</span>
+											</div>
+										</div>
+									
+									</div>
+								</a>
+									<div class="status-progress-wrap">
+										  <div  class="status-progress-bar-wrap">
+										    <div style="width:10%;" class="status-progress-bar">
+										    </div>
+										  </div>  
+										  <div class="status-wrap active">
+										    Ordered		
+										  </div>
+										  <div class="status-wrap text-light">
+										    Packed
+										  </div>
+										  <div class="status-wrap text-light">
+										    Shipped
+										  </div>
+										  <div class="status-wrap text-light">
+										    Delivered
+										  </div>
+									</div>
+									<h6 class="mt-2">Your Order has been placed. We will update the tracking details for this item once it is shipped</h6>
+										<h6 class="mt-3">Delivery Estimate: <strong class="font-weight-bold text-info">Arriving 30 Aug - 3 Sept </strong></h6>
+					</div>
+					<div class="ml-auto mt-4 mt-md-0 col-12 col-xl-3 col-lg-3  p-0">
+						<button type="button" class="btn btn-outline-dark btn-block">Cancel</button>
+						
+					</div>
+
+					</div>
+
+				  </div>
+				</div>
+				<div class="d-flex  align-self-center mb-4">
+				<label><i class="fas fa-question-circle fa-1x "></i> Need help with this order? <a href="#">Visit our help center</a></label>
+				</div>
+				
+			</div>
+			
+			<div class="col-12 col-xl-4 col-lg-4">
+                 <label class="">Payment Information</label>
+                 <div class="card shadow-sm">
+				  <div class="card-body text-muted d-flex">
+				    Payment Mode:<i class="fas fa-rupee-sign fa-1x mr-1 ml-1 mt-1 text-warning"></i> <strong>Cash On Delivery</strong> 
+
+				  </div>
+				</div>
+
+				 <label class="mt-4">Shipping Address</label>
+                 <div class="card shadow-sm">
+				  <div class="card-body">
+				  
+									<h3 class="kss-title font-weight-bold text-muted">Amit Shah</h3>
+								<p class="text-muted">
+									Maharaja Sayaji Gaikwad Udyog Bhawan Survey Number 152-152, Pune, Maharashtra 411007
+								</p>
+								<p class="text-muted">
+									Mobile: <b class="font-weight-bold">+91 8407917773</b>
+								</p>
+						
+				  </div>
+				</div>
+				<label class="mt-4">Order Summary</label>
+                 <div class="card shadow-sm">
+				  <div class="card-body">
+
+      <div class="d-flex justify-content-between py-1">
+        <div>
+          <label class="text-muted f-w-4 m-0">
+            Cart Total
+          </label>
+        </div>
+        <div> <span class="rs-symbol"><i class="fas fa-rupee-sign sm-font"></i></span> 1309 </div>
+      </div>
+      <div class="d-flex justify-content-between py-1">
+        <div><label class="text-muted f-w-4 m-0">Cart Discount</label></div>
+        <div class="text-success">- <span class="rs-symbol"><i class="fas fa-rupee-sign sm-font"></i></span> 440</div>
+      </div>
+      <div class="d-flex justify-content-between py-1">
+        <div><label class="text-muted f-w-4 m-0">Estimated Tax</label></div>
+        <div><span class="rs-symbol"><i class="fas fa-rupee-sign sm-font"></i></span> 180</div>
+      </div>
+      <div class="d-flex justify-content-between py-1">
+        <div><label class="text-muted f-w-4 m-0">Coupon Discount</label></div>
+        <div class="text-success">- <span class="rs-symbol"><i class="fas fa-rupee-sign sm-font"></i></span> 20</div>
+      </div>
+
+    <div class="d-flex justify-content-between py-1">
+      <div>
+        <label class="text-muted f-w-4 m-0">
+          Order Total 
+        </label>
+      </div>
+      <div> <span class="rs-symbol"><i class="fas fa-rupee-sign sm-font"></i></span> 1029 </div>
+    </div>
+    <div class="d-flex justify-content-between py-1">
+      <div><label class="text-muted f-w-4 m-0">Shipping Fee</label></div>
+      <div class=""><span class="rs-symbol"><i class="fas fa-rupee-sign sm-font"></i></span> 100</div>
+    </div>
+    <hr class="dashed">
+    <div class="cd-cart-total">
+    <h5 class="font-weight-bold">Total <span><i class="fas fa-rupee-sign "></i> 2,519</span></h5>
+  </div>
+  </div>
+ 
+   </div>
+				  </div>
+				</div>
+			</div>
+					<div id="similar" class="container">
+		<hr class="mt-5" >
+		<h4 class="font-weight-bold my-4">Customers who bought Cotton Rich Super Skinny Fit Jeans also bought</h4>
+	  <div id="card-list" class="row">
+            <div class="col-lg-3 col-md-6 mb-4 col-6  ">
+              <div class="card h-100 product-card">
+              	<i class="fas fa-heart kss_heart"></i>
+                <a href="/kss/product/" >
+                  <div class="image oh loading loading-01">
+                  <img data-src="https://jeromie.github.io/kss/img/normal/bluefront@1x.jpg" data-srcset="https://jeromie.github.io/kss/img/normal/bluefront@1x.jpg 1x, https://jeromie.github.io/kss/img/2x/bluefront@2x.jpg 2x" class="lazyload card-img-top" />
+                 </div>
+                </a>
+                <div class="card-body">
+                  <a href="/kss/product/" class="text-dark">
+                    <h5 class="card-title">
+                      Cotton Rich Super Skinny Fit Jeans
+                    </h5>
+                  </a>
+                    <div class="kss-price kss-price--smaller"><span class="rs-symbol"><i class="fas fa-rupee-sign "></i></span> 869 <small class="kss-original-price text-muted"><span class="rs-symbol"><i class="fas fa-rupee-sign "></i></span> 1309</small><span class="kss-discount text-danger">20% OFF</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4 col-6  ">
+           	  <div class="card h-100 product-card">
+           	 		<i class="fas fa-heart kss_heart"></i>
+                <a href="/kss/product/">
+                   <div class="image oh loading loading-02">
+                  <img data-src="https://jeromie.github.io/kss/img/normal/orangefront@1x.jpg" data-srcset="https://jeromie.github.io/kss/img/normal/orangefront@1x.jpg 1x, https://jeromie.github.io/kss/img/2x/orangefront@2x.jpg 2x" class="lazyload card-img-top" />
+                </div>
+                </a>
+                <div class="card-body">
+                  <a href="/kss/product/" class="text-dark">
+                    <h5 class="card-title">
+                      Cotton Rich Super Skinny Fit Jeans
+                    </h5>
+                  </a>
+                   <div class="kss-price kss-price--smaller"><span class="rs-symbol"><i class="fas fa-rupee-sign "></i></span> 869 <small class="kss-original-price text-muted"><span class="rs-symbol"><i class="fas fa-rupee-sign "></i></span> 1309</small><span class="kss-discount text-danger">20% OFF</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4 col-6   ">
+              <div class="card h-100 product-card">
+              	<i class="fas fa-heart kss_heart"></i>
+                <a href="/kss/product/">
+                   <div class="image oh loading loading-03">
+                        <img data-src="https://jeromie.github.io/kss/img/normal/red1front@1x.jpg" data-srcset="https://jeromie.github.io/kss/img/normal/red1front@1x.jpg 1x, https://jeromie.github.io/kss/img/2x/red1front@2x.jpg 2x" class="lazyload card-img-top" />
+                    </div>
+                </a>
+                <div class="card-body">
+                  <a href="/kss/product/" class="text-dark">
+                    <h5 class="card-title">
+                      Cotton Rich Super Skinny Fit Jeans
+                    </h5>
+                  </a>
+                     <div class="kss-price kss-price--smaller"><span class="rs-symbol"><i class="fas fa-rupee-sign "></i></span> 869 <small class="kss-original-price text-muted"><span class="rs-symbol"><i class="fas fa-rupee-sign "></i></span> 1309</small><span class="kss-discount text-danger">20% OFF</span></div>
+                </div>
+              </div>
+            </div>
+                <div class="col-lg-3 col-md-6 mb-4 col-6 ">
+              <div class="card h-100 product-card">
+                <i class="fas fa-heart kss_heart"></i>
+                <a href="/kss/product/">
+                   <div class="image oh loading loading-04">
+                   <img data-src="https://jeromie.github.io/kss/img/normal/redbluefront@1x.jpg"  data-srcset="https://jeromie.github.io/kss/img/normal/redbluefront@1x.jpg 1x, https://jeromie.github.io/kss/img/2x/redbluefront@2x.jpg 2x" class="lazyload card-img-top" />
+                 </div>
+                </a>
+                <div class="card-body">
+                  <a href="/kss/product/" class="text-dark">
+                    <h5 class="card-title">
+                      Cotton Rich Super Skinny Fit Jeans
+                    </h5>
+             	    </a>
+                    <div class="kss-price kss-price--smaller"><span class="rs-symbol"><i class="fas fa-rupee-sign "></i></span> 869 <small class="kss-original-price text-muted"><span class="rs-symbol"><i class="fas fa-rupee-sign "></i></span> 1309</small><span class="kss-discount text-danger">20% OFF</span></div>
+                </div>
+              </div>
+            </div>
+        </div>
+	</div>
+		</div>
+	</div>
+
+<div class="modal fade bd-example-modal-lg" id="loginModal" tabindex="-1" role="dialog" >
+  <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+    <div class="modal-content ">
+     
+      <div class="modal-body  p-0">
+
+        
+        <div class="row no-gutters">
+            <div class="col-md-6 d-none d-md-block" style="background:#f9ea20;">
+              <img src="https://jeromie.github.io/kss/img/sign-in.jpg" >
+            </div>
+            <div class="col-md-6  p-4">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+              <div class="sign-div ">
+         
+                <h3 class="modal-title mt-4">Sign in to Kidsuperstore.in</h3>
+                <p class="text-muted">Your favourite shopping destination now one click way.</p>
+                <form>
+                  <div class="form-group mb-0">
+                    <input type="number" class="form-control form-control-number form-control-lg" id="frm-mobile"  placeholder=" ">
+                    <label class="control-label">Enter Mobile Number</label>
+                  </div>
+                </form>
+                <div class="mt-3">
+                  <button type="button" class="btn btn-primary btn-block btn-lg login-btn">Send OTP <i class="fas fa-angle-right mt-2 position-absolute r-0"></i></button>
+                 
+                </div>
+                 
+                </form>
+              </div>
+                <div class="verify-div d-none">
+         
+                <h3 class="modal-title mt-4">Verfiy mobile number</h3>
+               
+                <form class="mt-3">
+            <div class="form-group text-center mb-0">
+              <p >Enter the OTP sent to your number</p><h4 class="font-weight-bold m-0">+91 840791773 <i class="fas fa-pencil-alt number-edit"></i></h4>
+              <input type="number" class="form-control form-control-number form-control-lg text-center mb-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+              <small> Resend OTP in 18 sec</small>
+            </div>
+          </form>
+          <div class="mt-3">
+            <button id="shipping-details" type="button" class="btn btn-primary  btn-block btn-lg btn-verify" data-toggle="modal" data-target="#checkout-flow">Verify <i class="fas fa-angle-right position-absolute r-0 mt-2"></i></button>
+          </div>
+              </div>
+            </div>
+        </div>
+        
+
+
+      </div>
+
+     
+    </div>
+  </div>
+</div><div class="overlay-fix" style="display:none;">
+                </div>
+	<a href="#" class="go-top">
+		<div class="top-icon">
+		</div>
+		Go Top
+	</a>
+
+<footer class="bg-light mt-5 pb-5 pt-5">
+<div class="container">
+        <div class="row">
+            <div class="mbr-footer-content col-6 col-md-2">
+                <p class="font-weight-bold"><strong>Online Shopping</strong></p>
+               <ul class="list-unstyled">
+				  <li class="mt-1 mb-1"><a href="#" class="text-gray">Boys</a></li>
+				  <li class="mt-1 mb-1"><a href="#" class="text-gray">Girls</a></li>
+				  <li class="mt-1 mb-1"><a href="#" class="text-gray">Infants</a></li>
+				  <li class="mt-1 mb-1"><a href="#" class="text-gray">Accessories</a></li>
+				  </ul>
+            </div>
+            <div class="mbr-footer-content col-6 col-md-2">
+            <p class="font-weight-bold"><strong>Usefull Links</strong></p>
+              <ul class="list-unstyled">
+				  <li class="mt-1 mb-1"><a href="/kss/contact-us/" class="text-gray">Contact Us</a></li>
+				  <li class="mt-1 mb-1"><a href="/kss/faq/" class="text-gray">FAQ</a></li>
+				  <li class="mt-1 mb-1"><a href="#" class="text-gray">Term of Use</a></li>
+				  <li class="mt-1 mb-1"><a href="#" class="text-gray">Track Orders</a></li>
+				  <li class="mt-1 mb-1"><a href="#" class="text-gray">Cancellation</a></li>
+				  <li class="mt-1 mb-1"><a href="#" class="text-gray">Shipping</a></li>
+				  <li class="mt-1 mb-1"><a href="#" class="text-gray">Return 30 days</a></li>
+				  <li class="mt-1 mb-1"><a href="#" class="text-gray">Blog</a></li>
+		
+				  </ul>
+            </div>
+            <div class="mbr-footer-content col-12 col-md-4 mt-5 mt-md-0">
+       		 <p class="font-weight-bold"><strong>Subscribe To Newsletter</strong></p>
+        	<form>
+			  <div class="form-group mt-0">
+			    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+			    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			  </div>
+			  <button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+			 <p class="font-weight-bold mt-4"><strong>Keep In Touch (Social Connect)</strong></p>
+			  <ul class="list-inline">
+			  	  <li class="list-inline-item"><a href="#" class="text-gray"><h3 ><i class="fab fa-facebook-f"></i></h3></a></li>
+				  <li class="list-inline-item"><a href="#" class="text-gray"><h3 ><i class="fab fa-twitter"></i></a></h3></li>
+				  <li class="list-inline-item"><a href="#" class="text-gray"><h3><i class="fab fa-youtube"></i></a></h3></li>
+				  <li class="list-inline-item"> <a href="#" class="text-gray"><h3><i class="fab fa-instagram"></i></a></h3></li>
+				   <li class="list-inline-item"><a href="#" class="text-gray"><h3><i class="fab fa-google-plus-g"></i></a></h3></li>
+				  <li class="list-inline-item"> <a href="#" class="text-gray"><h3><i class="fab fa-pinterest-p"></i></a></h3></li>
+			  </ul>
+            </div>
+
+              <div class="mbr-footer-content col-12 col-md-4 bl-1  mt-5 mt-md-0">
+       		 <div class="d-flex flex-row bd-highlight mb-2">
+				  <div class="bd-highlight mr-4 ml-2"><i class="icon-cod"></i></div>
+				  <div class="bd-highlight align-self-center">Shop online for <strong>Cash On Delivery</strong> products on Kidsuperstore.com</div>
+			</div>
+			 <div class="d-flex flex-row bd-highlight mb-2">
+				  <div class="bd-highlight mr-4 ml-2"><i class="icon-shipping"></i></div>
+				  <div class="bd-highlight align-self-center"><strong>Get free delivery</strong> for every order above <br>Rs. 1199</div>
+			</div>
+			 <div class="d-flex flex-row bd-highlight mb-2">
+				  <div class="bd-highlight mr-4 ml-2"><i class="icon-return"></i></div>
+				  <div class="bd-highlight align-self-center"><strong>Return within 30days</strong> of placing your <br>order</div>
+			</div>
+
+            </div>
+
+        </div>
+
+        <div class="border-bottom border-gray mt-4 mb-4 op-1">
+		</div>
+
+       <div class="row">
+       		<div class="col-12">
+       			 <p class="font-weight-bold mt-4"><strong>Our Leading Categories</strong></p>
+
+       			 <strong>Boys Clothings:</strong>  <a href="#" class="text-dark">T-Shirts </a> |  <a href="#" class="text-dark"> Shirts</a>  |   <a href="#" class="text-dark">Jeans & Trousers</a>  |    <a href="#" class="text-dark">Shorts & Dungarees</a>  |   <a href="#" class="text-dark">Track Pants & Pyjamas</a>  |   <a href="#" class="text-dark">Clothing Sets</a>   |    <a href="#" class="text-dark">Indian Wear</a>   |    <a href="#" class="text-dark">Jackets</a>   |   <a href="#" class="text-dark">Shorts & Dungarees</a>  |   <a href="#" class="text-dark">Track Pants & Pyjamas</a> 
+       			  <br>
+       			 <strong>Girls Clothings:</strong>  <a href="#" class="text-dark">T-Shirts </a> |  <a href="#" class="text-dark"> Shirts</a>  |   <a href="#" class="text-dark">Jeans & Trousers</a>  |    <a href="#" class="text-dark">Shorts & Dungarees</a>  |   <a href="#" class="text-dark">Track Pants & Pyjamas</a>  |   <a href="#" class="text-dark">Clothing Sets</a>   |    <a href="#" class="text-dark">Indian Wear</a>   |    <a href="#" class="text-dark">Jackets</a>   |   <a href="#" class="text-dark">Shorts & Dungarees</a>  |   <a href="#" class="text-dark">Track Pants & Pyjamas</a>   
+       			  <br>
+       			  <strong>Infants Clothings:</strong>  <a href="#" class="text-dark">T-Shirts </a> |  <a href="#" class="text-dark"> Shirts</a>  |   <a href="#" class="text-dark">Jeans & Trousers</a>  |    <a href="#" class="text-dark">Shorts & Dungarees</a>  |   <a href="#" class="text-dark">Track Pants & Pyjamas</a>  |   <a href="#" class="text-dark">Clothing Sets</a>   |    <a href="#" class="text-dark">Indian Wear</a>   |    <a href="#" class="text-dark">Jackets</a>   |   <a href="#" class="text-dark">Shorts & Dungarees</a>  
+       			   <br>
+       			  <strong>Kids Accessories:</strong>  <a href="#" class="text-dark">T-Shirts </a> |  <a href="#" class="text-dark"> Shirts</a>  |   <a href="#" class="text-dark">Jeans & Trousers</a>  |    <a href="#" class="text-dark">Shorts & Dungarees</a>  |   <a href="#" class="text-dark">Track Pants & Pyjamas</a>  |   <a href="#" class="text-dark">Clothing Sets</a>   |    <a href="#" class="text-dark">Indian Wear</a>   |    <a href="#" class="text-dark">Jackets</a>   |   <a href="#" class="text-dark">Shorts & Dungarees</a>  
+       		</div>
+       </div>
+
+       <div class="border-bottom border-gray mt-4 mb-4 op-1">
+	   </div>
+
+	     <div class="row">
+       		<div class="col-12">
+       			 <p class="font-weight-bold mb-3 mt-3"><strong>Kids Online Shopping Made Easy At Kidsuperstore</strong></p>
+
+       			 <p class="mb-5">
+       			 	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+       			 </p>
+       			 
+       			 <p class="font-weight-bold mb-3 "><strong>Kids Online Shopping Made Easy At Kidsuperstore</strong></p>
+
+       			 <p>
+       			 	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+       			 </p>
+
+       			 
+       		</div>
+       </div>
+<div class="border-bottom border-gray mt-4 mb-4 op-1">
+	   </div>
+        <div class="d-flex bd-highlight mb-3">
+		  	<div class="mr-auto p-2 bd-highlight">© Copyright 2018 Kidssuperstore. All rights reserved.</div>
+		  	<div class="p-2 bd-highlight ">Powered By Ajency.in</div>
+		</div>
+    </div>
+  </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+       <script src="https://unpkg.com/popper.js@1.14.4/dist/umd/popper.js"></script>
+
+    <script type="text/javascript" src="https://jeromie.github.io/kss/js/combine.js"></script>
+    <script type="text/javascript" src="https://jeromie.github.io/kss/js/codex-fly.js"></script>
+
+
+    
+
+    <script type="text/javascript" src="https://jeromie.github.io/kss/js/custom.js"></script>
+  </body>
+</html>

@@ -1,0 +1,898 @@
+{{ define "main" }}
+ <!--  <section>
+  	<div class="kss_banner mb-3 text-center" style="background:url('../img/banner.jpg') center;">
+  		<h1 class="display-4 bold">Boys Shirts</h1>
+  		<i class="d-block mt-2 d-block d-sm-none"> Showing 300 items</i>
+  	</div>
+  </section> -->
+  <section>
+    <div class="container mt-2 mt-md-4">
+     	<div class="row">
+    	  <div class="col-sm-12 col-md-3">
+          <div id="accordion" class="kss_filter d-sm-block">
+            <div class="kss_filter-list">
+              <div class="d-md-none d-block">
+          <!--   	<sm class=><a class="float-right font-weight-light d-none d-md-block" href="#">Reset </a></sm>
+            	<h4 class="mb-4 mt-0">Filter By  <i id="kss_hide-filter" class="float-right fa fa-times d-block d-md-none"></i></h4> -->
+              <div class="d-flex">
+              <div><h4 class="mt-0">Filter By</h4></div>
+              <div class="ml-auto"> <h3 id="kss_hide-filter" class="m-0 kss_highlight btn-pay"><span aria-hidden="true">&times;</span></h3></div>
+            </div>
+                <hr>
+              </div>
+              <div id="headingOne">
+           		  <label class="w-100" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Gender <i class="fas fa-angle-up float-right"></i>
+                </label>
+              </div>
+
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                	<div class="custom-control custom-checkbox">
+            			  <input type="checkbox" class="custom-control-input" id="customCheck1">
+            			  <label class="custom-control-label f-w-4" for="customCheck1">Male</label>
+            		  </div>
+              		<div class="custom-control custom-checkbox">
+            			  <input type="checkbox" class="custom-control-input" id="customCheck2">
+            			  <label class="custom-control-label f-w-4" for="customCheck2">Female</label>
+              		</div>
+              	
+              	
+                </div>
+              </div>
+            </div>
+            <div class="kss_filter-list">
+              <div id="headingTwo">
+                <label class=" w-100 collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                 Size<i class="fas fa-angle-up float-right"></i>
+                </label>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+               		<div class="custom-control custom-checkbox">
+              		  <input type="checkbox" class="custom-control-input" id="customCheck7">
+              		  <label class="custom-control-label f-w-4" for="customCheck7">1-12M <span class="sub-text">(03)</span></label>
+              		</div>
+              		<div class="custom-control custom-checkbox">
+              		  <input type="checkbox" class="custom-control-input" id="customCheck8">
+              		  <label class="custom-control-label f-w-4" for="customCheck8">2-3Y <span class="sub-text">(20)</span></label>
+              		</div>
+              		<div class="custom-control custom-checkbox">
+              		  <input type="checkbox" class="custom-control-input" id="customCheck9">
+              		  <label class="custom-control-label f-w-4" for="customCheck9">4-5Y <span class="sub-text">(23)</span></label>
+            		  </div>
+                    <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck10">
+                    <label class="custom-control-label f-w-4" for="customCheck10">6-7Y <span class="sub-text">(43)</span></label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck11">
+                    <label class="custom-control-label f-w-4" for="customCheck11">8-9Y <span class="sub-text">(03)</span></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="kss_filter-list">
+              <div id="headingThree">
+                <label class="w-100 collapsed" data-toggle="collapse" data-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
+                  Color<i class="fas fa-angle-up float-right"></i>
+                </label>
+              </div>
+              <div id="collapseseven" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+               
+<ul class="product-color p-0">
+  <li>
+    <input type="checkbox" name="color" id="red"/>
+    <label for="red" style="background-color:red;"></label>
+  </li>
+  <li>
+    <input type="checkbox" name="color" id="#A2C2C9"/>
+    <label for="#A2C2C9" style="background-color:#A2C2C9;"></label>
+  </li>
+  <li>
+    <input type="checkbox" name="color" id="#EFDBD4"/>
+    <label for="#EFDBD4" style="background-color:#EFDBD4;"></label>
+  </li>
+  <li>
+    <input type="checkbox" name="color" id="#2196F3"/>
+    <label for="#2196F3" style="background-color:#2196F3;"></label>
+  </li>
+  <li>
+    <input type="checkbox" name="color" id="#4CAF50"/>
+    <label for="#4CAF50" style="background-color:#4CAF50;"></label>
+  </li>
+  <li>
+    <input type="checkbox" name="color" id="#00BCD4" checked="checked"/>
+    <label for="#00BCD4" style="background-color:#00BCD4;"></label>
+  </li>
+    <li>
+    <input type="checkbox" name="color" id="#000000"/>
+    <label for="#000000" style="background-color:#000000;"></label>
+  </li>
+  <li>
+    <input type="checkbox" name="color" id="#f56724"/>
+    <label for="#f56724" style="background-color:#f56724;"></label>
+  </li>
+  <li>
+    <input type="checkbox" name="color" id="#874853" checked="checked"/>
+    <label for="#874853" style="background-color:#874853;"></label>
+  </li>
+
+</ul>
+
+                </div>
+              </div>
+            </div>
+            <div class="kss_filter-list">
+              <div id="headingThree">
+                <label class="w-100 collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Price<i class="fas fa-angle-up float-right"></i>
+                </label>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+              	  <div class="custom-control custom-checkbox">
+            			  <input type="checkbox" class="custom-control-input" id="customCheck12">
+            			  <label class="custom-control-label f-w-4" for="customCheck12">Below ₹200.00 <span class="sub-text">(23)</span></label>
+            		  </div>
+              		<div class="custom-control custom-checkbox">
+              		  <input type="checkbox" class="custom-control-input" id="customCheck13">
+              		  <label class="custom-control-label f-w-4" for="customCheck13">₹200.00 - ₹300.00 <span class="sub-text">(43)</span></label>
+              		</div>
+              		<div class="custom-control custom-checkbox">
+              		  <input type="checkbox" class="custom-control-input" id="customCheck14">
+              		  <label class="custom-control-label f-w-4" for="customCheck14">₹300.00 - ₹400.00 <span class="sub-text">(32)</span></label>
+              		</div>
+              		<div class="custom-control custom-checkbox">
+              		  <input type="checkbox" class="custom-control-input" id="customCheck15">
+              		  <label class="custom-control-label f-w-4" for="customCheck15">₹400.00 and above <span class="sub-text">(33)</span></label>
+              		</div>
+                  <div class="row mt-3">
+                    <div class="col-5 col-sm-5">
+                   <input class="form-control form-control-lg" id="min" type="text" placeholder="Min">
+                    </div>
+                     <div class="col-2 col-sm-2 text-center">
+                      <h6 class="align-self-center mt-4">to</h6>
+                    </div>
+                      <div class="col-5 col-sm-5">
+                         <input class="form-control form-control-lg" id="Max" type="text" placeholder="Max">
+                    </div>
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="kss_filter-list">
+              <div id="headingThree">
+                <label class=" w-100 collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                  Tags<i class="fas fa-angle-up float-right"></i>
+                </label>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+             	    <div class="btn-group mb-1" role="group" aria-label="first group">
+                  <button type="button" class="btn btn-outline-dark"><i class="fas fa-tag"></i> Toon Tshirt</button>
+                </div>
+                 <div class="btn-group  mb-1" role="group" aria-label="second group">
+                  <button type="button" class="btn btn-outline-dark"><i class="fas fa-tag"></i> Character Tshirt</button>
+                </div>
+                  <div class="btn-group  mb-1" role="group" aria-label="first group">
+                  <button type="button" class="btn btn-outline-dark"><i class="fas fa-tag"></i> Diwali Collection </button>
+                </div>
+                 <div class="btn-group  mb-1" role="group" aria-label="second group">
+                  <button type="button" class="btn btn-outline-dark"><i class="fas fa-tag"></i> Beach Wear</button>
+                </div>
+                  <div class="btn-group  mb-1" role="group" aria-label="first group">
+                  <button type="button" class="btn btn-outline-dark"><i class="fas fa-tag"></i> Party Wear</button>
+                </div>
+                 <div class="btn-group  mb-1" role="group" aria-label="second group">
+                  <button type="button" class="btn btn-outline-dark"><i class="fas fa-tag"></i> School Uniform</button>
+                </div>
+                </div>
+              </div>
+            </div>
+          
+              <div class="fixed-bottom d-none footer-filter">
+                    <div class="row no-gutters px-2 py-2">
+                        <div class="col-6 text-center">
+                          <button type="button" class=" btn btn-lg btn-block btn-link text-dark mt-1 mb-1">Clear All</button>
+              
+                        </div>
+                        <div class="col-6 text-center">
+                            <button type="button" class="btn btn-lg btn-block btn-primary mt-1 mb-1">Apply</button>
+                        </div>
+                    </div>
+                </div>
+          </div>
+    	  </div>
+    	  <div class="col-sm-12 col-md-9 bl-1">
+    	  	<div class="d-none ">
+    		  	<div class="row mt-2">
+    		  		<div class="col-sm-6">
+    		  			<i class="d-block mt-2"> Showing 300 items</i>
+    		  		</div>
+    		  		<div class="col-sm-6 ">
+          			<form class="form-inline float-right">
+          			  <div class="form-group mb-2">
+          			   Sort By
+          			  </div>
+          			  <div class="form-group mx-sm-3 mb-2">
+            			  <select class="form-control custom">
+            				  <option>Popularity</option>
+            				  <option>Latest</option>
+            				  <option>Discount</option>
+            				  <option>Price: High to Low</option>
+            				  <option>Price: Low to High</option>
+            				</select>
+          			  </div>
+          			</form>
+    		  		</div>
+    		  	</div>
+    		  </div>
+          <div class="d-flex">
+            <div>
+                    <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-1 bg-transparent p-0">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Boys</a></li>
+                        <li class="breadcrumb-item active"><a href="#">Boys Shirts</a></li>
+                    </ol>
+                  </nav>
+                 <h1 class="w-100 kss-title m-0 text-gray font-weight-bold">
+                    Boy Tshirts <span class="f-w-4 sub-text"> - 300 Tshirts</span>
+                 </h1>
+            </div>
+            <div class="ml-auto d-none d-md-block">
+              <div class="d-flex flex-row kss-select-border mt-2">
+              <div class="size-qty align-self-center">
+                <h6 class="m-0 f-w-4 sub-text"> Sort By:</h6>
+              </div>
+              <div class="pl-2 align-self-center">
+                <select class="size form-control  form-control-sm br-0  border-dark custom"  >
+                  <option>Popularity</option>
+                      <option>Latest</option>
+                      <option>Discount</option>
+                      <option>Price: High to Low</option>
+                      <option>Price: Low to High</option>
+                </select> 
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="d-none d-md-block filter-selection">
+          <div class="d-flex mt-3 ">
+            <div class="border border-dark p-1 mr-2 ">Male <span class="ml-1 h6 kss_highlight" aria-hidden="true">&times;</span></div>
+            <div class="border border-dark p-1 mr-2">1-12M <span class="ml-1 h6 kss_highlight" aria-hidden="true">&times;</span></div>
+            <div class="border border-dark p-1 mr-2">Below ₹200.00 <span class="ml-1 h6 kss_highlight" aria-hidden="true">&times;</span></div>
+            <div class=" p-1 mr-2"><a href="#" class="font-weight-bold kss-link clear-filter" >Clear All</a></div>
+          </div>
+          </div>
+    	  	<hr class="d-none d-sm-block">
+          <div id="card-list" class="row">
+            <div class="col-lg-4 col-md-6 mb-4 col-6  ">
+
+              <div class="card h-100 product-card">
+              
+              	<i class="fas fa-heart kss_heart"></i>
+                <a href="/kss/product/" >
+                  <div class="image oh loading loading-01">
+                  <div class="overlay"></div>
+                  <img data-src="{{"img/normal/bluefront@1x.jpg" | absURL}}" data-srcset="{{"img/normal/bluefront@1x.jpg" | absURL}} 1x, {{"img/2x/bluefront@2x.jpg" | absURL}} 2x" class="lazyload card-img-top" />
+                 </div>
+                </a>
+                <div class="card-body">
+                  <a href="/kss/product/" class="text-dark">
+                    <h5 class="card-title">
+                      Cotton Rich Super Skinny Fit Jeans
+                    </h5>
+                  </a>
+                  <div class="kss-price kss-price--smaller">₹869 <small class="kss-original-price text-muted">₹1309</small><span class="kss-discount text-danger">20% OFF</span></div>
+                </div>
+                   <div class="select-size alert alert-light">
+                  <label class="ml-2"> Sizes</label>
+                    <div class="radio-wrap d-flex kss_sizes wo-image mb-4">
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="111" />
+                    <label class="radio-label" for="111" title="18-24 months">
+                      <div class="radio-option">18-24M</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="112"/>
+                    <label class="radio-label" for="112" title="1-2 years">
+                      <div class="radio-option">1-2Y</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="113"  />
+                    <label class="radio-label" for="113" title="2-4 years">
+                      <div class="radio-option">2-4Y</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="114"/>
+                    <label class="radio-label" for="114" title="4-8 years">
+                      <div class="radio-option">4-8Y</div>
+                    </label>
+                     <input class="d-none radio-input" type="radio" name="kss-sizes" id="115"/>
+                    <label class="radio-label" for="115" title="9-10 years">
+                      <div class="radio-option">9-10Y</div>
+                    </label>
+                </div>
+                <button type="button" class="btn btn-lg btn-block btn-warning disabled"  >Select Size</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 col-6  ">
+           	  <div class="card h-100 product-card">
+                  <div class="select-size alert alert-light">
+                  <label class="ml-2"> Sizes</label>
+                    <div class="radio-wrap d-flex kss_sizes wo-image mb-4">
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="116" />
+                    <label class="radio-label" for="116" title="18-24 months">
+                      <div class="radio-option">18-24M</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="117"/>
+                    <label class="radio-label" for="117" title="1-2 years">
+                      <div class="radio-option">1-2Y</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="118"  />
+                    <label class="radio-label" for="118" title="2-4 years">
+                      <div class="radio-option">2-4Y</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="119"/>
+                    <label class="radio-label" for="119" title="4-8 years">
+                      <div class="radio-option">4-8Y</div>
+                    </label>
+                     <input class="d-none radio-input" type="radio" name="kss-sizes" id="120"/>
+                    <label class="radio-label" for="120" title="9-10 years">
+                      <div class="radio-option">9-10Y</div>
+                    </label>
+                </div>
+                <button type="button" class="btn btn-lg btn-block btn-warning disabled"  aria-disabled="true">Select Size</button>
+                </div>
+           	 		<i class="fas fa-heart kss_heart"></i>
+                <a href="/kss/product/">
+                   <div class="image oh loading loading-02">
+                    <div class="overlay"></div>
+                  <img data-src="{{"img/normal/orangefront@1x.jpg" | absURL}}" data-srcset="{{"img/normal/orangefront@1x.jpg" | absURL}} 1x, {{"img/2x/orangefront@2x.jpg" | absURL}} 2x" class="lazyload card-img-top" />
+                </div>
+                </a>
+                <div class="card-body">
+                  <a href="/kss/product/" class="text-dark">
+                    <h5 class="card-title">
+                      Cotton Rich Super Skinny Fit Jeans
+                    </h5>
+                  </a>
+                  <div class="kss-price kss-price--smaller">₹869 <small class="kss-original-price text-muted">₹1309</small><span class="kss-discount text-danger">20% OFF</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 col-6   ">
+              <div class="card h-100 product-card">
+                 <div class="select-size alert alert-light">
+                  <label class="ml-2"> Sizes</label>
+                    <div class="radio-wrap d-flex kss_sizes wo-image mb-4">
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="121" />
+                    <label class="radio-label" for="121" title="18-24 months">
+                      <div class="radio-option">18-24M</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="122"/>
+                    <label class="radio-label" for="122" title="1-2 years">
+                      <div class="radio-option">1-2Y</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="123"  />
+                    <label class="radio-label" for="123" title="2-4 years">
+                      <div class="radio-option">2-4Y</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="124"/>
+                    <label class="radio-label" for="124" title="4-8 years">
+                      <div class="radio-option">4-8Y</div>
+                    </label>
+                     <input class="d-none radio-input" type="radio" name="kss-sizes" id="125"/>
+                    <label class="radio-label" for="125" title="9-10 years">
+                      <div class="radio-option">9-10Y</div>
+                    </label>
+                </div>
+                <button type="button" class="btn btn-lg btn-block btn-warning disabled"  aria-disabled="true">Select Size</button>
+                </div>
+              	<i class="fas fa-heart kss_heart"></i>
+                <a href="/kss/product/">
+                   <div class="image oh loading loading-03">
+                    <div class="overlay"></div>
+                        <img data-src="{{"img/normal/red1front@1x.jpg" | absURL}}" data-srcset="{{"img/normal/red1front@1x.jpg" | absURL}} 1x, {{"img/2x/red1front@2x.jpg" | absURL}} 2x" class="lazyload card-img-top" />
+                    </div>
+                </a>
+                <div class="card-body">
+                  <a href="/kss/product/" class="text-dark">
+                    <h5 class="card-title">
+                      Cotton Rich Super Skinny Fit Jeans
+                    </h5>
+                  </a>
+                  <div class="kss-price kss-price--smaller">₹869 <small class="kss-original-price text-muted">₹1309</small><span class="kss-discount text-danger">20% OFF</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 col-6 ">
+              <div class="card h-100 product-card">
+                 <div class="select-size alert alert-light">
+                  <label class="ml-2"> Sizes</label>
+                    <div class="radio-wrap d-flex kss_sizes wo-image mb-4">
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="126" />
+                    <label class="radio-label" for="126" title="18-24 months">
+                      <div class="radio-option">18-24M</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="127"/>
+                    <label class="radio-label" for="127" title="1-2 years">
+                      <div class="radio-option">1-2Y</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="128"  />
+                    <label class="radio-label" for="128" title="2-4 years">
+                      <div class="radio-option">2-4Y</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="129"/>
+                    <label class="radio-label" for="129" title="4-8 years">
+                      <div class="radio-option">4-8Y</div>
+                    </label>
+                     <input class="d-none radio-input" type="radio" name="kss-sizes" id="130"/>
+                    <label class="radio-label" for="130" title="9-10 years">
+                      <div class="radio-option">9-10Y</div>
+                    </label>
+                </div>
+                <button type="button" class="btn btn-lg btn-block btn-warning disabled"  aria-disabled="true">Select Size</button>
+                </div>
+                <i class="fas fa-heart kss_heart"></i>
+                <a href="/kss/product/" >
+                   <div class="image oh loading loading-04 product-thumb">
+                    <div class="overlay"></div>
+                   <img data-src="{{"img/normal/redbluefront@1x.jpg" | absURL}}"  data-srcset="{{"img/normal/redbluefront@1x.jpg" | absURL}} 1x, {{"img/2x/redbluefront@2x.jpg" | absURL}} 2x" class="lazyload card-img-top" alt="Adidas kid Black Linear Printed Round Neck T-shirt" />
+                 </div>
+                </a>
+                <div class="card-body">
+                  <a href="/kss/product/" class="text-dark">
+                    <h5 class="card-title">
+                      Cotton Rich Super Skinny Fit Jeans
+                    </h5>
+             	    </a>
+                  <div class="kss-price kss-price--smaller">₹869 <small class="kss-original-price text-muted">₹1309</small><span class="kss-discount text-danger">20% OFF</span></div>
+                </div>
+              </div>
+            </div>
+   <div class="col-lg-4 col-md-6 mb-4 col-6  ">
+              <div class="card h-100 product-card">
+                 <div class="select-size alert alert-light">
+                  <label class="ml-2"> Sizes</label>
+                    <div class="radio-wrap d-flex kss_sizes wo-image mb-4">
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="18-24" />
+                    <label class="radio-label" for="18-24" title="18-24 months">
+                      <div class="radio-option">18-24M</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="1-2"/>
+                    <label class="radio-label" for="1-2" title="1-2 years">
+                      <div class="radio-option">1-2Y</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="2-4"  />
+                    <label class="radio-label" for="2-4" title="2-4 years">
+                      <div class="radio-option">2-4Y</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="4-8"/>
+                    <label class="radio-label" for="4-8" title="4-8 years">
+                      <div class="radio-option">4-8Y</div>
+                    </label>
+                     <input class="d-none radio-input" type="radio" name="kss-sizes" id="9-10"/>
+                    <label class="radio-label" for="9-10" title="9-10 years">
+                      <div class="radio-option">9-10Y</div>
+                    </label>
+                </div>
+                <button type="button" class="btn btn-lg btn-block btn-warning disabled"  aria-disabled="true">Select Size</button>
+                </div>
+                <i class="fas fa-heart kss_heart"></i>
+                <a href="/kss/product/" >
+                  <div class="image oh loading loading-01 product-thumb">
+                    <div class="overlay"></div>
+                  <img data-src="{{"img/normal/5front@1x.jpg" | absURL}}" data-srcset="{{"img/normal/5front@1x.jpg" | absURL}} 1x, {{"img/2x/5front@2x.jpg" | absURL}} 2x" class="lazyload card-img-top" alt="Adidas kid Black Linear Printed Round Neck T-shirt"/>
+                 </div>
+                </a>
+                <div class="card-body">
+                  <a href="/kss/product/" class="text-dark">
+                    <h5 class="card-title">
+                      Cotton Rich Super Skinny Fit Jeans
+                    </h5>
+                  </a>
+                  <div class="kss-price kss-price--smaller">₹869 <small class="kss-original-price text-muted">₹1309</small><span class="kss-discount text-danger">20% OFF</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 col-6  ">
+              <div class="card h-100 product-card">
+                 <div class="select-size alert alert-light">
+                  <label class="ml-2"> Sizes</label>
+                    <div class="radio-wrap d-flex kss_sizes wo-image mb-4">
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="18-24" />
+                    <label class="radio-label" for="18-24" title="18-24 months">
+                      <div class="radio-option">18-24M</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="1-2"/>
+                    <label class="radio-label" for="1-2" title="1-2 years">
+                      <div class="radio-option">1-2Y</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="2-4"  />
+                    <label class="radio-label" for="2-4" title="2-4 years">
+                      <div class="radio-option">2-4Y</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="4-8"/>
+                    <label class="radio-label" for="4-8" title="4-8 years">
+                      <div class="radio-option">4-8Y</div>
+                    </label>
+                     <input class="d-none radio-input" type="radio" name="kss-sizes" id="9-10"/>
+                    <label class="radio-label" for="9-10" title="9-10 years">
+                      <div class="radio-option">9-10Y</div>
+                    </label>
+                </div>
+                <button type="button" class="btn btn-lg btn-block btn-warning disabled"  aria-disabled="true">Select Size</button>
+                </div>
+                <i class="fas fa-heart kss_heart"></i>
+                <a href="/kss/product/">
+                   <div class="image oh loading loading-02 product-thumb">
+                    <div class="overlay"></div>
+                  <img data-src="{{"img/normal/6front@1x.jpg" | absURL}}" data-srcset="{{"img/normal/6front@1x.jpg" | absURL}} 1x, {{"img/2x/6front@2x.jpg" | absURL}} 2x" class="lazyload card-img-top" alt="Adidas kid Black Linear Printed Round Neck T-shirt"/>
+                </div>
+                </a>
+                <div class="card-body">
+                  <a href="/kss/product/" class="text-dark">
+                    <h5 class="card-title">
+                      Cotton Rich Super Skinny Fit Jeans
+                    </h5>
+                  </a>
+                  <div class="kss-price kss-price--smaller">₹869 <small class="kss-original-price text-muted">₹1309</small><span class="kss-discount text-danger">20% OFF</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 col-6   ">
+              <div class="card h-100 product-card">
+                 <div class="select-size alert alert-light">
+                  <label class="ml-2"> Sizes</label>
+                    <div class="radio-wrap d-flex kss_sizes wo-image mb-4">
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="18-24" />
+                    <label class="radio-label" for="18-24" title="18-24 months">
+                      <div class="radio-option">18-24M</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="1-2"/>
+                    <label class="radio-label" for="1-2" title="1-2 years">
+                      <div class="radio-option">1-2Y</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="2-4"  />
+                    <label class="radio-label" for="2-4" title="2-4 years">
+                      <div class="radio-option">2-4Y</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="4-8"/>
+                    <label class="radio-label" for="4-8" title="4-8 years">
+                      <div class="radio-option">4-8Y</div>
+                    </label>
+                     <input class="d-none radio-input" type="radio" name="kss-sizes" id="9-10"/>
+                    <label class="radio-label" for="9-10" title="9-10 years">
+                      <div class="radio-option">9-10Y</div>
+                    </label>
+                </div>
+                <button type="button" class="btn btn-lg btn-block btn-warning disabled"  aria-disabled="true">Select Size</button>
+                </div>
+                <i class="fas fa-heart kss_heart"></i>
+                <a href="/kss/product/">
+                   <div class="image oh loading loading-03 product-thumb">
+                    <div class="overlay"></div>
+                        <img data-src="{{"img/normal/7front@1x.jpg" | absURL}}" data-srcset="{{"img/normal/7front@1x.jpg" | absURL}} 1x, {{"img/2x/7front@2x.jpg" | absURL}} 2x" class="lazyload card-img-top" alt="Adidas kid Black Linear Printed Round Neck T-shirt"/>
+                    </div>
+                </a>
+                <div class="card-body">
+                  <a href="/kss/product/" class="text-dark">
+                    <h5 class="card-title">
+                      Cotton Rich Super Skinny Fit Jeans
+                    </h5>
+                  </a>
+                  <div class="kss-price kss-price--smaller">₹869 <small class="kss-original-price text-muted">₹1309</small><span class="kss-discount text-danger">20% OFF</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 col-6 ">
+              <div class="card h-100 product-card">
+                 <div class="select-size alert alert-light">
+                  <label class="ml-2"> Sizes</label>
+                    <div class="radio-wrap d-flex kss_sizes wo-image mb-4">
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="18-24" />
+                    <label class="radio-label" for="18-24" title="18-24 months">
+                      <div class="radio-option">18-24M</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="1-2"/>
+                    <label class="radio-label" for="1-2" title="1-2 years">
+                      <div class="radio-option">1-2Y</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="2-4"  />
+                    <label class="radio-label" for="2-4" title="2-4 years">
+                      <div class="radio-option">2-4Y</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="4-8"/>
+                    <label class="radio-label" for="4-8" title="4-8 years">
+                      <div class="radio-option">4-8Y</div>
+                    </label>
+                     <input class="d-none radio-input" type="radio" name="kss-sizes" id="9-10"/>
+                    <label class="radio-label" for="9-10" title="9-10 years">
+                      <div class="radio-option">9-10Y</div>
+                    </label>
+                </div>
+                <button type="button" class="btn btn-lg btn-block btn-warning disabled"  aria-disabled="true">Select Size</button>
+                </div>
+                <i class="fas fa-heart kss_heart"></i>
+                <a href="/kss/product/">
+                   <div class="image oh loading loading-04 product-thumb">
+                    <div class="overlay"></div>
+                   <img data-src="{{"img/normal/8front@1x.jpg" | absURL}}"  data-srcset="{{"img/normal/8front@1x.jpg" | absURL}} 1x, {{"img/2x/8front@2x.jpg" | absURL}} 2x" class="lazyload card-img-top" alt="Adidas kid Black Linear Printed Round Neck T-shirt" />
+                 </div>
+                </a>
+                <div class="card-body">
+                  <a href="/kss/product/" class="text-dark">
+                    <h5 class="card-title">
+                      Cotton Rich Super Skinny Fit Jeans
+                    </h5>
+                  </a>
+                  <div class="kss-price kss-price--smaller">₹869 <small class="kss-original-price text-muted">₹1309</small><span class="kss-discount text-danger">20% OFF</span></div>
+                </div>
+              </div>
+            </div>
+               <div class="col-lg-4 col-md-6 mb-4 col-6 ">
+              <div class="card h-100 product-card">
+                <i class="fas fa-heart kss_heart"></i>
+                <a href="/kss/product/">
+                   <div class="image oh loading loading-04 product-thumb">
+                    <div class="overlay"></div>
+                   <img data-src="{{"img/normal/9front@1x.jpg" | absURL}}"  data-srcset="{{"img/normal/9front@1x.jpg" | absURL}} 1x, {{"img/2x/9front@2x.jpg" | absURL}} 2x" class="lazyload card-img-top" alt="Adidas kid Black Linear Printed Round Neck T-shirt" />
+                 </div>
+                </a>
+                <div class="card-body">
+                  <a href="/kss/product/" class="text-dark">
+                    <h5 class="card-title">
+                      Cotton Rich Super Skinny Fit Jeans
+                    </h5>
+                  </a>
+                  <div class="kss-price kss-price--smaller">₹869 <small class="kss-original-price text-muted">₹1309</small><span class="kss-discount text-danger">20% OFF</span></div>
+                </div>
+              </div>
+            </div>
+               <div class="col-lg-4 col-md-6 mb-4 col-6 ">
+              <div class="card h-100 product-card">
+                 <div class="select-size alert alert-light">
+                  <label class="ml-2"> Sizes</label>
+                    <div class="radio-wrap d-flex kss_sizes wo-image mb-4">
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="18-24" />
+                    <label class="radio-label" for="18-24" title="18-24 months">
+                      <div class="radio-option">18-24M</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="1-2"/>
+                    <label class="radio-label" for="1-2" title="1-2 years">
+                      <div class="radio-option">1-2Y</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="2-4"  />
+                    <label class="radio-label" for="2-4" title="2-4 years">
+                      <div class="radio-option">2-4Y</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="4-8"/>
+                    <label class="radio-label" for="4-8" title="4-8 years">
+                      <div class="radio-option">4-8Y</div>
+                    </label>
+                     <input class="d-none radio-input" type="radio" name="kss-sizes" id="9-10"/>
+                    <label class="radio-label" for="9-10" title="9-10 years">
+                      <div class="radio-option">9-10Y</div>
+                    </label>
+                </div>
+                <button type="button" class="btn btn-lg btn-block btn-warning disabled"  aria-disabled="true">Select Size</button>
+                </div>
+                <i class="fas fa-heart kss_heart"></i>
+                <a href="/kss/product/">
+                   <div class="image oh loading loading-04 product-thumb">
+                    <div class="overlay"></div>
+                   <img data-src="{{"img/normal/10front@1x.jpg" | absURL}}"  data-srcset="{{"img/normal/10front@1x.jpg" | absURL}} 1x, {{"img/2x/10front@2x.jpg" | absURL}} 2x" class="lazyload card-img-top" alt="Adidas kid Black Linear Printed Round Neck T-shirt"/>
+                 </div>
+                </a>
+                <div class="card-body">
+                  <a href="/kss/product/" class="text-dark">
+                    <h5 class="card-title">
+                      Cotton Rich Super Skinny Fit Jeans
+                    </h5>
+                  </a>
+                  <div class="kss-price kss-price--smaller">₹869 <small class="kss-original-price text-muted">₹1309</small><span class="kss-discount text-danger">20% OFF</span></div>
+                </div>
+              </div>
+            </div>
+               <div class="col-lg-4 col-md-6 mb-4 col-6 ">
+              <div class="card h-100 product-card">
+                 <div class="select-size alert alert-light">
+                  <label class="ml-2"> Sizes</label>
+                    <div class="radio-wrap d-flex kss_sizes wo-image mb-4">
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="18-24" />
+                    <label class="radio-label" for="18-24" title="18-24 months">
+                      <div class="radio-option">18-24M</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="1-2"/>
+                    <label class="radio-label" for="1-2" title="1-2 years">
+                      <div class="radio-option">1-2Y</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="2-4"  />
+                    <label class="radio-label" for="2-4" title="2-4 years">
+                      <div class="radio-option">2-4Y</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="4-8"/>
+                    <label class="radio-label" for="4-8" title="4-8 years">
+                      <div class="radio-option">4-8Y</div>
+                    </label>
+                     <input class="d-none radio-input" type="radio" name="kss-sizes" id="9-10"/>
+                    <label class="radio-label" for="9-10" title="9-10 years">
+                      <div class="radio-option">9-10Y</div>
+                    </label>
+                </div>
+                <button type="button" class="btn btn-lg btn-block btn-warning disabled"  aria-disabled="true">Select Size</button>
+                </div>
+                <i class="fas fa-heart kss_heart"></i>
+                <a href="/kss/product/">
+                   <div class="image oh loading loading-04 product-thumb">
+                    <div class="overlay"></div>
+                   <img data-src="{{"img/normal/11front@1x.jpg" | absURL}}"  data-srcset="{{"img/normal/11front@1x.jpg" | absURL}} 1x, {{"img/2x/11front@2x.jpg" | absURL}} 2x" class="lazyload card-img-top" alt="Adidas kid Black Linear Printed Round Neck T-shirt" />
+                 </div>
+                </a>
+                <div class="card-body">
+                  <a href="/kss/product/" class="text-dark">
+                    <h5 class="card-title">
+                      Cotton Rich Super Skinny Fit Jeans
+                    </h5>
+                  </a>
+                  <div class="kss-price kss-price--smaller">₹869 <small class="kss-original-price text-muted">₹1309</small><span class="kss-discount text-danger">20% OFF</span></div>
+                </div>
+              </div>
+            </div>
+               <div class="col-lg-4 col-md-6 mb-4 col-6 ">
+              <div class="card h-100 product-card">
+                 <div class="select-size alert alert-light">
+                  <label class="ml-2"> Sizes</label>
+                    <div class="radio-wrap d-flex kss_sizes wo-image mb-4">
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="18-24" />
+                    <label class="radio-label" for="18-24" title="18-24 months">
+                      <div class="radio-option">18-24M</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="1-2"/>
+                    <label class="radio-label" for="1-2" title="1-2 years">
+                      <div class="radio-option">1-2Y</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="2-4"  />
+                    <label class="radio-label" for="2-4" title="2-4 years">
+                      <div class="radio-option">2-4Y</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="4-8"/>
+                    <label class="radio-label" for="4-8" title="4-8 years">
+                      <div class="radio-option">4-8Y</div>
+                    </label>
+                     <input class="d-none radio-input" type="radio" name="kss-sizes" id="9-10"/>
+                    <label class="radio-label" for="9-10" title="9-10 years">
+                      <div class="radio-option">9-10Y</div>
+                    </label>
+                </div>
+                <button type="button" class="btn btn-lg btn-block btn-warning disabled"  aria-disabled="true">Select Size</button>
+                </div>
+                <i class="fas fa-heart kss_heart"></i>
+                <a href="/kss/product/">
+                   <div class="image oh loading loading-04 product-thumb">
+                    <div class="overlay"></div>
+                   <img data-src="{{"img/normal/12front@1x.jpg" | absURL}}"  data-srcset="{{"img/normal/12front@1x.jpg" | absURL}} 1x, {{"img/2x/12front@2x.jpg" | absURL}} 2x" class="lazyload card-img-top" alt="Adidas kid Black Linear Printed Round Neck T-shirt" />
+                 </div>
+                </a>
+                <div class="card-body">
+                  <a href="/kss/product/" class="text-dark">
+                    <h5 class="card-title">
+                      Cotton Rich Super Skinny Fit Jeans
+                    </h5>
+                  </a>
+                  <div class="kss-price kss-price--smaller">₹869 <small class="kss-original-price text-muted">₹1309</small><span class="kss-discount text-danger">20% OFF</span></div>
+                </div>
+              </div>
+            </div>
+               <div class="col-lg-4 col-md-6 mb-4 col-6 ">
+              <div class="card h-100 product-card">
+                 <div class="select-size alert alert-light">
+                  <label class="ml-2"> Sizes</label>
+                    <div class="radio-wrap d-flex kss_sizes wo-image mb-4">
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="18-24" />
+                    <label class="radio-label" for="18-24" title="18-24 months">
+                      <div class="radio-option">18-24M</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="1-2"/>
+                    <label class="radio-label" for="1-2" title="1-2 years">
+                      <div class="radio-option">1-2Y</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="2-4"  />
+                    <label class="radio-label" for="2-4" title="2-4 years">
+                      <div class="radio-option">2-4Y</div>
+                    </label>
+                    <input class="d-none radio-input" type="radio" name="kss-sizes" id="4-8"/>
+                    <label class="radio-label" for="4-8" title="4-8 years">
+                      <div class="radio-option">4-8Y</div>
+                    </label>
+                     <input class="d-none radio-input" type="radio" name="kss-sizes" id="9-10"/>
+                    <label class="radio-label" for="9-10" title="9-10 years">
+                      <div class="radio-option">9-10Y</div>
+                    </label>
+                </div>
+                <button type="button" class="btn btn-lg btn-block btn-warning disabled"  aria-disabled="true">Select Size</button>
+                </div>
+                <i class="fas fa-heart kss_heart"></i>
+                <a href="/kss/product/">
+                   <div class="image oh loading loading-04 product-thumb">
+                    <div class="overlay"></div>
+                   <img data-src="{{"img/normal/13front@1x.jpg" | absURL}}"  data-srcset="{{"img/normal/13front@1x.jpg" | absURL}} 1x, {{"img/2x/13front@2x.jpg" | absURL}} 2x" class="lazyload card-img-top" alt="Adidas kid Black Linear Printed Round Neck T-shirt" />
+                 </div>
+                </a>
+                <div class="card-body">
+                  <a href="/kss/product/" class="text-dark">
+                    <h5 class="card-title">
+                      Cotton Rich Super Skinny Fit Jeans
+                    </h5>
+                  </a>
+                  <div class="kss-price kss-price--smaller">₹869 <small class="kss-original-price text-muted">₹1309</small><span class="kss-discount text-danger">20% OFF</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+    	  </div>
+    	</div>
+    </div>
+    <br>
+    <br>
+    <div class="modal fade" id="kss_sort" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog m-0 fixed-bottom" role="document">
+        <div class="modal-content fixed-bottom">
+          <div class="modal-header">
+            <h6 class="modal-title text-muted" id="exampleModalLongTitle">Sort by</h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="">
+          	<ul class="list-group list-unstyled kss_sort mb-0">
+              <li class="list-group-item pl-2">
+                <a href="#" class="text-dark"><i class="kss_icon popularity"></i> Popularity</a>
+              </li>
+              <li class="list-group-item pl-2">
+                <a href="#" class="text-dark"><i class="kss_icon latest"></i> Latest</a>
+              </li>
+              <li class="list-group-item pl-2">
+                <a href="#" class="text-dark"><i class="kss_icon discount"></i> Discount</a>
+              </li>
+              <li class="list-group-item pl-2">
+                <a href="#" class="text-dark"><i class="kss_icon price-h"></i> Price: High to Low</a>
+              </li>
+              <li class="list-group-item pl-2">
+                <a href="#" class="text-dark"><i class="kss_icon price-l"></i> Price: Low to High</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--     <div class="fixed-bottom d-block d-md-none">
+    	<div class="row">
+    		<div class="col-6 text-center b-r">
+    			<a data-toggle="modal" data-target="#kss_sort"><h5 class="mt-4">Sort</h5></a>
+    		</div>
+    		<div class="col-6 text-center" id="filter" >
+    			<a><h5 id="filter" class="mt-4">Filter</h5></a>
+    		</div>
+    	</div>
+    </div> -->
+     <div class="fixed-bottom d-block d-md-none">
+                    <div class="row no-gutters">
+                        <div class="col-6 text-center b-r">
+                          <button  data-toggle="modal" data-target="#kss_sort" type="button" class="btn btn-lg btn-block btn-link text-dark mt-1 mb-1">Sort</button>
+              
+                        </div>
+                        <div class="col-6 text-center">
+                            <button id="filter" type="button" class=" btn btn-lg btn-block btn-link text-dark mt-1 mb-1">Filter</button>
+                        </div>
+                    </div>
+                </div>
+  </section>
+{{ end }}
