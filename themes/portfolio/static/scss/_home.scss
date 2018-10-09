@@ -75,9 +75,54 @@ section{
 .slick-track{
     align-items: center!important;
     display: flex !important;
-     @media (min-width: 320px) and (max-width: 767.98px) {
-       img{
-        width:296px;
-       }
-      }
+    img{
+        width:890px;
+
+        @media (min-width: 768px) and (max-width: 991.98px) { 
+            width:490px;
+         }
+
+         @media (min-width: 992px) and (max-width: 1399.98px) {
+            width:690px;
+         }
+          @media (min-width: 320px) and (max-width: 767.98px) {
+               
+          width:296px;
+              }
+
+    }
+}
+
+.ajency-portfolio{
+        position: absolute;
+        right: 0px;
+        top:-90px;
+        z-index: -1;
+        opacity: 0;
+        transition: all 0.5s ease;
+        width:40vw;
+    img{
+        width: 100%;
+    }
+    @media (min-width: 320px) and (max-width: 767.98px) {
+        display:none;
+     }
+}
+
+.items{
+    cursor: pointer;
+        h5{
+            border-bottom: 2px solid #fff;
+            display: -webkit-inline-box;
+            padding-bottom: 4px;
+
+        }
+    &:hover{
+        h5{
+            border-bottom: 2px solid #f2cd05;
+        }
+        .ajency-portfolio{
+            opacity:1;
+        }
+    }
 }
