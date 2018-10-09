@@ -38,6 +38,7 @@ nav{
         padding-right:2rem;
       }
 }
+
 .seperator{
     padding-top:6rem;
     @media (min-width: 320px) and (max-width: 767.98px) {
@@ -134,4 +135,14 @@ section{
 }
 .text-black{
     color: #000!important;
+}
+
+
+/*Portfolio*/
+.p2{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.overflow-h{
+    overflow: hidden;
 }
