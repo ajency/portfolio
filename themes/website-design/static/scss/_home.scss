@@ -1,6 +1,4 @@
-body{
-    font-family: 'Work Sans', sans-serif;
-}
+
 .bread-crumb{
     h1{
     @media (min-width: 320px) and (max-width: 767.98px) {
@@ -17,72 +15,27 @@ body{
         }
     }
 }
-.ft6{
-    font-weight: 600;
-}
+
 .logo{
     @media (min-width: 320px) and (max-width: 767.98px) {
     width:100%;
   }
 }
 .headerfix{
-    height:138px;
+    height:188px;
     z-index:999;
     position:relative;
 @media (min-width: 320px) and (max-width: 767.98px) {
     height:184px;
   }
 }
-.mt5{
-    margin-top:4rem;
-@media (min-width: 320px) and (max-width: 767.98px) {
-       margin-top:2rem;
-      }
-}
+
  
 nav{
     
 @media (min-width: 320px) and (max-width: 767.98px) {
     background: #fff;
     padding-bottom: 16px;
-    }
-}
-.mb5{
-    margin-bottom:4rem;
-}
-.mb6{
-    margin-bottom:6rem;
-}
-.p5{
-    padding-left:4rem;
-    padding-right:4rem;
-      @media (min-width: 320px) and (max-width: 767.98px) {
-        padding-left:2rem;
-        padding-right:2rem;
-      }
-}
-
-.seperator{
-    padding-top:6rem;
-    @media (min-width: 320px) and (max-width: 767.98px) {
-    font-size: 4rem;
-    padding-top: 4rem;
-    }
-}
-section{
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    @media (min-width: 320px) and (max-width: 767.98px) {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    }
-}
-.body-text{
-    font-size: 1.75rem;
-    letter-spacing: .2px;
-    line-height: 1.428;
-    @media (min-width: 320px) and (max-width: 767.98px) {
-    font-size: 1.375rem;
     }
 }
 
@@ -95,6 +48,7 @@ section{
 }
 .slick-slide {
     margin-left: 100px;
+    cursor: -webkit-grab;
      @media (min-width: 320px) and (max-width: 767.98px) {
       margin-left: 50px;
       }
@@ -120,77 +74,22 @@ section{
     }
 }
 
-.ajency-portfolio{
-        position: absolute;
-        right: 0px;
-        z-index: 9999;
-        opacity: 0;
-        transition: all 0.5s ease;
-        width:40vw;
-    img{
-        width: 100%;
+.aj-team-member{
+    .slick-slide{
+        width: 1300px;
     }
-    @media (min-width: 320px) and (max-width: 767.98px) {
-        display:none;
-     }
-}
-.portfolio-1{
-            top: 100px;
-}
-.portfolio-2{
-            top: 150px;
-}
-.portfolio-3{
-            top: 180px;
-}
-.portfolio-4{
-            top: 200px;
-}
-.items{
-    cursor: pointer;
-        h5{
-            border-bottom: 2px solid #fff;
-            display: -webkit-inline-box;
-            padding-bottom: 4px;
-
-        }
-    &:hover{
-        h5{
-            border-bottom: 2px solid #f2cd05;
-        }
-        .ajency-portfolio{
-            opacity:1;
-        }
-        .portfolio-1{
-            top: -90px;
-        }
-        .portfolio-2{
-            top: -30px;
-        }
-        .portfolio-3{
-            top: -20px;
-        }
-        .portfolio-4{
-            top: 90px;
-        }
+    .slick-track{
+            flex-shrink: 0;
+    }
+    .team-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
     }
 }
-.text-link{
-    text-decoration: none !important;
-}
-.text-black{
-    color: #000!important;
-}
-
-
-/*Portfolio*/
-.p2{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-.pt-6{
-    padding-top:60px;
-}
-.overflow-h{
-    overflow: hidden;
+.slider-contanier{
+    padding-right: 0px;
+    margin-right: 0px;
+    padding-left: 0;
 }

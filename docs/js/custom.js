@@ -31,13 +31,13 @@ jQuery('.variable-width').slick({
   ]
 });
     
-const slider = $(".variable-width");
 
 
-slider.on('wheel', (function(e) {
-  e.preventDefault();
-
-  if (e.originalEvent.deltaY < 0) {
-    $(this).slick('slickNext');
-  }
-}));
+$('.aj-team-member').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  arrows:false,
+  slidesToShow: 1,
+  variableWidth: true
+});

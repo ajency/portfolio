@@ -1,0 +1,56 @@
+
+.ajency-portfolio{
+        position: absolute;
+        right: 0px;
+        z-index: 9999;
+        opacity: 0;
+        transition: all 0.5s ease;
+        width:40vw;
+    img{
+        width: 100%;
+    }
+    @media (min-width: 320px) and (max-width: 767.98px) {
+        display:none;
+     }
+}
+.portfolio-1{
+            top: 100px;
+}
+.portfolio-2{
+            top: 150px;
+}
+.portfolio-3{
+            top: 180px;
+}
+.portfolio-4{
+            top: 200px;
+}
+.items{
+    cursor: pointer;
+        h5{
+            border-bottom: 2px solid #fff;
+            display: -webkit-inline-box;
+            padding-bottom: 4px;
+
+        }
+    &:hover{
+        h5{
+            border-bottom: 2px solid #f2cd05;
+        }
+        .ajency-portfolio{
+            opacity:1;
+        }
+        .portfolio-1{
+            top: -90px;
+        }
+        .portfolio-2{
+            top: -30px;
+        }
+        .portfolio-3{
+            top: -20px;
+        }
+        .portfolio-4{
+            top: 90px;
+        }
+    }
+}
