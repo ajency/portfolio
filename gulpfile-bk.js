@@ -24,7 +24,7 @@ const AUTOPREFIXER_BROWSERS = [
 
 // Gulp task to minify CSS files
 gulp.task('styles', function () {
-  return gulp.src('./themes/portfolio/static/scss/custom.scss')
+  return gulp.src('./themes/website-design/static/scss/custom.scss')
     // Compile SASS files
     .pipe(sass({
       outputStyle: 'nested',
@@ -37,21 +37,21 @@ gulp.task('styles', function () {
     // Minify the file
     .pipe(csso())
     // Output
-    .pipe(gulp.dest('./themes/portfolio/static/css'))
+    .pipe(gulp.dest('./themes/website-design/static/css'))
 });
 
 // Gulp task to minify JavaScript files
 gulp.task('scripts', function() {
-  return gulp.src('./themes/kss/static/js/*.js')
+  return gulp.src('./themes/website-design/static/js/*.js')
     // Minify the file
     .pipe(uglify())
     // Output
-    .pipe(gulp.dest('./themes/kss/static/js/dist'))
+    .pipe(gulp.dest('./themes/website-design/static/js/dist'))
 });
 
 // Static Server + watching scss/html files
 gulp.task('watch', ['styles'], function() {
-    gulp.watch(['./themes/kss/static/scss/*.scss'], ['sass']);
+    gulp.watch(['./themes/website-design/static/scss/*.scss'], ['sass']);
 });
 
 gulp.task('default', ['watch', 'scripts']);

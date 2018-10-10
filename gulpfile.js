@@ -10,21 +10,21 @@ var gulp = require('gulp'),
 
 // Minifies JS
 gulp.task('scripts', function(){
-    return gulp.src(['./themes/portfolio/static/js/bootstrap.min.js', './themes/portfolio/static/js/slick.min.js'])
+    return gulp.src(['./themes/website-design/static/js/bootstrap.min.js', './themes/website-design/static/js/slick.min.js'])
     .pipe(uglify())
     .pipe(concat('combine.js'))
-    .pipe(gulp.dest('./themes/portfolio/static/js'))
+    .pipe(gulp.dest('./themes/website-design/static/js'))
 });
 
 /*==========  Minify and concat different styles files  ==========*/
 
 // SASS Version
 gulp.task('sass', function() {
-    return gulp.src('./themes/portfolio/static/scss/custom.scss')
+    return gulp.src('./themes/website-design/static/scss/custom.scss')
         .pipe(sass())
         // Minify the file
         .pipe(csso())
-        .pipe(gulp.dest("./themes/portfolio/static/css"))
+        .pipe(gulp.dest("./themes/website-design/static/css"))
         .pipe(browserSync.stream());
 });
 
@@ -44,10 +44,10 @@ gulp.task('sass', function() {
 
 gulp.task('css', function(){
     // return gulp.src('./themes/kss/static/css/*.css')
-    return gulp.src(['./themes/portfolio/static/css/custom.css'])
+    return gulp.src(['./themes/website-design/static/css/custom.css'])
      .pipe(csso())
      .pipe(concat('combine.css'))
-   .pipe(gulp.dest('./themes/portfolio/static/css'))
+   .pipe(gulp.dest('./themes/website-design/static/css'))
 });
 
 gulp.task('default', function() {
@@ -57,5 +57,5 @@ gulp.task('default', function() {
 });
 
 gulp.task('watch', ['sass'], function() {
-    gulp.watch(['./themes/portfolio/static/scss/*.scss'], ['sass']);
+    gulp.watch(['./themes/website-design/static/scss/*.scss'], ['sass']);
 });
