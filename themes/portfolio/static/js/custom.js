@@ -1,21 +1,22 @@
 
 
 
+    
 
 jQuery('.variable-width').slick({
- dots: false,
       arrows:false,
-      infinite: true,
+      infinite: false,
       speed: 300,
       slidesToShow: 1,
-      variableWidth: true,
+      initialSlide: 1,
+       centerMode: true,
+         variableWidth: true,
   responsive: [
     {
       breakpoint: 768,
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: '40px',
         slidesToShow: 2,
       }
     },
