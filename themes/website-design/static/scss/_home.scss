@@ -123,7 +123,6 @@ section{
 .ajency-portfolio{
         position: absolute;
         right: 0px;
-        top:-90px;
         z-index: -1;
         opacity: 0;
         transition: all 0.5s ease;
@@ -135,7 +134,18 @@ section{
         display:none;
      }
 }
-
+.portfolio-1{
+            top: 100px;
+}
+.portfolio-2{
+            top: 150px;
+}
+.portfolio-3{
+            top: 180px;
+}
+.portfolio-4{
+            top: 200px;
+}
 .items{
     cursor: pointer;
         h5{
@@ -150,6 +160,18 @@ section{
         }
         .ajency-portfolio{
             opacity:1;
+        }
+        .portfolio-1{
+            top: -90px;
+        }
+        .portfolio-2{
+            top: -30px;
+        }
+        .portfolio-3{
+            top: -20px;
+        }
+        .portfolio-4{
+            top: 90px;
         }
     }
 }

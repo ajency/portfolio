@@ -5,9 +5,10 @@
 
 jQuery('.variable-width').slick({
       arrows:false,
-      infinite: false,
+      infinite: true,
       speed: 300,
       slidesToShow: 1,
+      dots:false,
       initialSlide: 1,
        centerMode: true,
          variableWidth: true,
@@ -30,3 +31,13 @@ jQuery('.variable-width').slick({
   ]
 });
     
+const slider = $(".variable-width");
+
+
+slider.on('wheel', (function(e) {
+  e.preventDefault();
+
+  if (e.originalEvent.deltaY < 0) {
+    $(this).slick('slickNext');
+  }
+}));
