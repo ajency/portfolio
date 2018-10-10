@@ -13,12 +13,18 @@
   </url>
   
   <url>
-    <loc>https://ajency.github.io/website-design/portfolio-indigo-wine/</loc>
+    <loc>https://ajency.github.io/website-design/goa-our-work/wine-site-website-design/</loc>
     <lastmod>2018-06-04T12:57:20+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://ajency.github.io/website-design/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/website-design/goa-our-work/</loc>
+    <lastmod>2018-06-04T12:57:20+05:30</lastmod>
     <priority>0</priority>
   </url>
   
