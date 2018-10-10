@@ -123,7 +123,7 @@ section{
 .ajency-portfolio{
         position: absolute;
         right: 0px;
-        z-index: -1;
+        z-index: 9999;
         opacity: 0;
         transition: all 0.5s ease;
         width:40vw;
