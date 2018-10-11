@@ -60,5 +60,8 @@
 .our-work{
     .items{
         width: 29vw;
+        @media (min-width: 320px) and (max-width: 767.98px) {
+           width: 100%;
+         }
     }
 }

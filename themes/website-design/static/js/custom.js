@@ -25,7 +25,8 @@ jQuery('.variable-width').slick({
       breakpoint: 480,
       settings: {
         arrows: false,
-        slidesToShow: 1
+        slidesToShow: 1,
+         centerPadding: '35px',
       }
     }
   ]
