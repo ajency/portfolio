@@ -36,22 +36,23 @@ nav{
 @media (min-width: 320px) and (max-width: 767.98px) {
     background: #fff;
     padding-bottom: 16px;
+    z-index: 999;
     }
 }
 
 .menu{
     @media (min-width: 320px) and (max-width: 767.98px) {
-        font-size:1.3rem !important;
-        margin-top: 4px;
-        display: block;
-      }
+    font-size: 1rem!important;
+    margin-top: 11px;
+    display: block;
+    }
 }
 .slick-slide {
     margin-left: 100px;
     cursor: -webkit-grab;
-     @media (min-width: 320px) and (max-width: 767.98px) {
+    @media (min-width: 320px) and (max-width: 767.98px) {
       margin-left: 50px;
-      }
+    }
 }
 .slick-track{
     align-items: center!important;
@@ -77,19 +78,134 @@ nav{
 .aj-team-member{
     .slick-slide{
         width: 1300px;
+        @media (min-width: 320px) and (max-width: 767.98px) {
+          width:260px;
+        }
     }
     .slick-track{
             flex-shrink: 0;
     }
     .team-desc{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        @media (min-width: 320px) and (max-width: 767.98px) {
+          margin-top:20px;
+        }
     }
 }
 .slider-contanier{
     padding-right: 0px;
     margin-right: 0px;
     padding-left: 0;
+     @media (min-width: 320px) and (max-width: 767.98px) {
+         padding-left:30px;
+         .display-3{
+                font-size: 2.5rem;
+         }
+          h5{
+                font-size: 0.8rem;
+         }
+    }
+}
+
+.aj-faq{
+    .card{
+        border-bottom: 1px solid #000 !important;
+        border-left: 0px;
+        border-right: 0px;
+        border-radius: 0px;
+        .card-header{
+            background: none;
+            border: 0px;
+            h2{
+                display: block;
+                cursor: pointer;
+                @media (min-width: 320px) and (max-width: 767.98px) {
+                    font-size: 1.3rem;
+                }
+            }
+            .text-link{
+                display: block;
+                cursor: pointer;
+                &:after{
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    content: "\f078";
+                    position: absolute;
+                    right: 10px;
+                    top: 26px;
+                    color: $gray-700;
+                    transition: all 0.3s ease;
+                    transform: rotate(180deg);
+                }
+                &.collapsed{
+                    &:after{
+                        transform: rotate(0deg);
+                    }
+                }
+            }
+        }
+    }
+    .card:first-of-type{
+        border-top: 1px solid #000 !important;
+    }
+}
+
+
+.form-group{
+  position: relative;
+  margin-top:30px;
+    button{
+    position: absolute;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    bottom: 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+}
+
+.form-control{
+  border: 0px;
+  padding: 10px 0px;
+  background-image:linear-gradient(#f9bc23, #f9bc23), linear-gradient(#D2D2D2, #D2D2D2);
+  background-size : 0% 2px, 100% 1px;
+  background-position : center bottom, center 100%;
+  background-repeat : no-repeat;
+  border-radius: 0px;
+  background-color: transparent;
+  transition : background 0.3s ease-out;
+
+}
+.form-control-number{
+    font-size: 26px !important;
+    padding-left:0px;
+    font-weight:bold;
+}
+
+.form-control:focus{
+  outline : none;
+  background-image:linear-gradient(#f9bc23, #f9bc23), linear-gradient(#D2D2D2, #D2D2D2);
+      background-size: 100% 2px , 100% 1px;
+}
+.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 1rem;
+}
+.form-control:focus + .control-label, .has-value + .control-label{
+      top: -20px;
+    left: 0px;
+    font-size: 12px;
+  
+}
+.control-label{
+  position : absolute;
+  top: 6px;
+  font-size:14px;
+  padding-left: 0px;
+  pointer-events : none;
+  font-weight:400;
+  transition : all 0.2s ease-out;
 }

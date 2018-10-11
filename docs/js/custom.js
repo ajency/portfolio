@@ -34,7 +34,7 @@ jQuery('.variable-width').slick({
 
 
 $('.aj-team-member').slick({
-  dots: false,
+  dots: true,
   infinite: true,
   speed: 300,
   arrows:false,
