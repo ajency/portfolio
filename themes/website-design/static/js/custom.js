@@ -32,6 +32,13 @@ jQuery('.variable-width').slick({
 });
     
 
+jQuery( ".our-work .items" ).hover(
+  function() {
+    $( '.aj-our-work' ).addClass( "invisible" );
+  }, function() {
+    $( '.aj-our-work' ).removeClass( "invisible" );
+  }
+);
 
 $('.aj-team-member').slick({
   dots: true,

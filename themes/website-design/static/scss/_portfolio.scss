@@ -1,8 +1,8 @@
 
 .ajency-portfolio{
         position: absolute;
-        right: 0px;
-        z-index: 9999;
+        right: 10px;
+        z-index: 99999;
         opacity: 0;
         transition: all 0.5s ease;
         width:40vw;
@@ -37,6 +37,9 @@
         h5{
             border-bottom: 2px solid #f2cd05;
         }
+        .aj-our-work{
+            opacity:0;
+        }
         .ajency-portfolio{
             opacity:1;
         }
@@ -50,7 +53,7 @@
             top: -20px;
         }
         .portfolio-4{
-            top: 90px;
+            top: 0px;
         }
     }
 }

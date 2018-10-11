@@ -60,3 +60,10 @@ section{
 .overflow-h{
     overflow: hidden;
 }
+footer{
+   @media (min-width: 320px) and (max-width: 767.98px) {
+    .w-75{
+        width:100% !important;
+    }
+    } 
+}
