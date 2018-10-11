@@ -2,7 +2,11 @@
 .ft6{
     font-weight: 600;
 }
-
+@media (min-width: 992px) and (max-width: 1399.98px) {
+    .container {
+        max-width: 1200px;
+    }
+}
 
 .mt5{
     margin-top:4rem;
