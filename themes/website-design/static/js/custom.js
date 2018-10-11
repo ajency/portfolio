@@ -53,7 +53,7 @@ $('.aj-team-member').slick({
 
 
 $(window).scroll(function(){
-    if ($(window).scrollTop() >= 300) {
+    if ($(window).scrollTop() >= 20) {
         $('nav').addClass('fixed-header');
     }
     else {
