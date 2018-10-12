@@ -6,5 +6,5 @@ layout: hotel-management-site-website-design
 url: /goa-our-work/hotel-management-site-website-design/
 
 metaAxisrooms: true
-
+metaHome: true
 ---
