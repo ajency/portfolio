@@ -5,4 +5,6 @@ draft: false
 layout: hotel-management-site-website-design
 url: /goa-our-work/hotel-management-site-website-design/
 
+meta-axisrooms: true
+
 ---
