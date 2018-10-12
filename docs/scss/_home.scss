@@ -5,6 +5,9 @@
          margin-top: 23px;
          font-size: 1.4rem;
       }
+    @media (min-width: 768px) and (max-width: 991.98px) { 
+        font-size:1.7rem;
+    }
         span{
             font-weight: 100;
         }
@@ -26,10 +29,13 @@
             height: 100%;
             background: #fff;
             padding: 50px 80px;
+            @media (min-width: 768px) and (max-width: 1199.98px) { 
+               display:none;
+            }
         @media (min-width: 992px) and (max-width: 1399.98px) {
-        right: 0%;
-        width: 36vw; 
-        padding: 30px 40px;  
+            right: 0%;
+            width: 36vw; 
+            padding: 30px 40px;  
         }
     h1{
         margin:auto;
@@ -46,6 +52,9 @@
     width:152px !important;
     float: left !important;
   }
+   @media (min-width: 768px) and (max-width: 991.98px) { 
+            width:110px;
+         }
 }
 .headerfix{
     height:188px;
@@ -71,6 +80,14 @@ nav{
     font-size: 1rem!important;
     display: flex;
     align-items: center;
+    }
+    @media (min-width: 768px) and (max-width: 1199.98px) { 
+          word-break: break-all;
+          font-size: 1.4rem;
+    }
+    @media (min-width: 768px) and (max-width: 991.98px) { 
+          word-break: break-all;
+          font-size: 1.14rem;
     }
 }
 .slick-slide {
@@ -110,6 +127,9 @@ nav{
          @media (min-width: 992px) and (max-width: 1399.98px) {
             width:900px;
          }
+         @media (min-width: 768px) and (max-width: 1199.98px) {  
+              width: 600px;
+            }
     }
     .slick-track{
             flex-shrink: 0;
@@ -122,6 +142,12 @@ nav{
         @media (min-width: 320px) and (max-width: 767.98px) {
           margin-top:20px;
           padding-bottom:5px;
+        }
+       @media (min-width: 768px) and (max-width: 1199.98px) { 
+            width:100% !important;
+          h1{
+            font-size: 2.5rem;
+          }
         }
     }
 }
@@ -138,6 +164,9 @@ nav{
                 font-size: 0.8rem;
          }
     }
+   @media (min-width: 768px) and (max-width: 1199.98px) { 
+         padding-left:30px;
+        }
 }
 
 .aj-faq{
@@ -252,3 +281,17 @@ nav{
          background: #fff;
     }
 }
+
+
+@media (min-width: 768px) and (max-width: 1199.98px) { 
+ .contact-details{
+       max-width: 100%;
+       flex: none;
+       margin-bottom: 30px !important;
+    }
+    .contact-details-1{
+        max-width: 100%;
+       flex: none;
+    }
+
+ }

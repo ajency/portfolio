@@ -12,6 +12,10 @@
     @media (min-width: 320px) and (max-width: 767.98px) {
         display:none;
      }
+   @media (min-width: 768px) and (max-width: 1199.98px) { 
+        display:none;
+    }
+
 }
 .portfolio-1{
             top: 100px;
@@ -63,5 +67,8 @@
         @media (min-width: 320px) and (max-width: 767.98px) {
            width: 100%;
          }
+          @media (min-width: 768px) and (max-width: 1199.98px) { 
+              width: 100%;
+            }
     }
 }
