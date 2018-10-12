@@ -7,6 +7,9 @@
      name='viewport' 
      content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' 
 />
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#707279" />
 
 {{ if $.Params.metaHome }} 
 
@@ -14,19 +17,26 @@
 <meta name="viewport" content="hi am axisrooms">
 {{ end }}
 
-{{ if $.Params.metaIndigowine }}  
-<meta name="viewport" content="hi am indigowines">
+{{ if $.Params.metaAxisrooms }}  
+<meta name="viewport" content="hi am axisrooms">
+{{ end }}
+
+{{ if $.Params.metaDesigndesk }}  
+<meta name="viewport" content="hi am designdesk">
+{{ end }}
+
+{{ if $.Params.metaMarvel }}  
+<meta name="viewport" content="hi am marvel">
 {{ end }}
 
 {{ else }}
 
  <meta name="description" content="We work with startups in Goa, London, Mumbai, Bangalore &amp; rest of the world. We combine both UI/UX &amp; web + mobile development skills to create winning digital products."/>
- 
+
 {{ end }}
    
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#707279" />
+   
     <link  rel="icon" type="image/x-icon" href="{{"img/favicon.png" | absURL}}" />
 
     <!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet"> -->
