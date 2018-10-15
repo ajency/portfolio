@@ -1,5 +1,5 @@
 ---
-title: "Wesite design and development of Axisrooms.com | Ajency.in Goa"
+title: "Website design and development of Axisrooms.com | Ajency.in Goa"
 date: 2018-06-04T12:57:20+05:30
 draft: false
 layout: hotel-management-site-website-design
