@@ -52,28 +52,49 @@ $('.aj-team-member').slick({
 
 
 
-$(window).scroll(function(){
-    if ($(window).scrollTop() >= 20) {
-        $('nav').addClass('fixed-header');
-        $('nav').addClass('position-fixed');
-    }
-    else {
-        $('nav').removeClass('fixed-header');
-         $('nav').removeClass('position-fixed');
-    }
-});
+// $(window).scroll(function(){
+//     if ($(window).scrollTop() >= 20) {
+//         $('nav').addClass('fixed-header');
+//         $('nav').addClass('position-fixed');
+//     }
+//     else {
+//         $('nav').removeClass('fixed-header');
+//          $('nav').removeClass('position-fixed');
+//     }
+// });
 
 if ($(window).width() < 760) {
 
-        $('.pf-healthkart').click(function() {
+$('.pf-healthkart').click(function() {
      $('.scroll-left').addClass('active');
-     var imgtag = $(this).closest('.items').find(".portfolio-mobile").clone();
-     $('.img-section').html(imgtag);
-});
+    $('.mobile-slick').slick('slickGoTo', 0);
 
+     // var imgtag = $(this).closest('.items').find(".portfolio-mobile").clone();
+     // $('.img-section').html(imgtag);
+});
+$('.pf-commonfloor').click(function() {
+     $('.scroll-left').addClass('active');
+    $('.mobile-slick').slick('slickGoTo', 1);
+});
+$('.pf-growthinvest').click(function() {
+     $('.scroll-left').addClass('active');
+    $('.mobile-slick').slick('slickGoTo', 2);
+});
+$('.pf-weddingz').click(function() {
+     $('.scroll-left').addClass('active');
+    $('.mobile-slick').slick('slickGoTo', 3);
+});
+$('.mobile-slick').slick({
+   infinite: true,
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   arrows:true,
+   centerPadding: '0px',
+   centerMode:true,
+});
+  
 $('.back').click(function() {
      $('.scroll-left').removeClass('active');
-     $(".img-section img").remove();
 });
         }
 
