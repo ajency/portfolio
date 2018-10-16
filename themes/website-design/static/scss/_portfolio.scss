@@ -124,25 +124,7 @@
                 }
 
         }
-           .items{
-         position: relative;
-         .text-black {
-            width:90%;
-            display:block;
-         }
-    }
-    .items:before{
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        content: "\f078";
-        position: absolute;
-        right: 10px;
-        top: 27%;
-        font-size: 20px;
-        color: #f0c70f;
-        transition: all .3s ease;
-        transform: rotate(-90deg)
-    }
+         
     }
     .active{
         right:0px!important;
@@ -169,4 +151,24 @@
         display:none !important;
     }
 }
-
+@media (min-width: 320px) and (max-width: 767.98px) {
+  .items{
+         position: relative;
+         .text-black {
+            width:90%;
+            display:block;
+         }
+    }
+    .items:before{
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f078";
+        position: absolute;
+        right: 10px;
+        top: 27%;
+        font-size: 20px;
+        color: #f0c70f;
+        transition: all .3s ease;
+        transform: rotate(-90deg)
+    }
+}
