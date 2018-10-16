@@ -62,3 +62,14 @@ $(window).scroll(function(){
          $('nav').removeClass('position-fixed');
     }
 });
+
+  $('.pf-healthkart').click(function() {
+     $('.scroll-left').addClass('active');
+     var imgtag = $(this).closest('.items').find(".portfolio-mobile").clone();
+     $('.img-section').html(imgtag);
+});
+
+$('.back').click(function() {
+     $('.scroll-left').removeClass('active');
+     $(".img-section img").remove();
+});
