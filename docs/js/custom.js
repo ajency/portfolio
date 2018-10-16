@@ -68,6 +68,7 @@ if ($(window).width() < 760) {
 $('.pf-healthkart').click(function() {
      $('.scroll-left').addClass('active');
     $('.mobile-slick').slick('slickGoTo', 0);
+    $('body').css("overflow", "hidden"); 
 
      // var imgtag = $(this).closest('.items').find(".portfolio-mobile").clone();
      // $('.img-section').html(imgtag);
@@ -75,26 +76,32 @@ $('.pf-healthkart').click(function() {
 $('.pf-commonfloor').click(function() {
      $('.scroll-left').addClass('active');
     $('.mobile-slick').slick('slickGoTo', 1);
+    $('body').css("overflow", "hidden");
 });
 $('.pf-growthinvest').click(function() {
      $('.scroll-left').addClass('active');
     $('.mobile-slick').slick('slickGoTo', 2);
+    $('body').css("overflow", "hidden");
 });
 $('.pf-weddingz').click(function() {
      $('.scroll-left').addClass('active');
     $('.mobile-slick').slick('slickGoTo', 3);
+    $('body').css("overflow", "hidden");
 });
 $('.mobile-slick').slick({
    infinite: true,
    slidesToShow: 1,
    slidesToScroll: 1,
-   arrows:true,
+   arrows:false,
    centerPadding: '0px',
    centerMode:true,
 });
   
 $('.back').click(function() {
      $('.scroll-left').removeClass('active');
+     $('body').css("overflow", "scroll"); 
+  $(".scroll-left").animate({ scrollTop: 0 }, "slow");
+  return false;
 });
         }
 
