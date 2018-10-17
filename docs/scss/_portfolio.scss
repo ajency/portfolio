@@ -173,3 +173,53 @@
         transform: rotate(-90deg)
     }
 }
+
+
+  .num-terms-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    -webkit-transition: .2s ease-in;
+    transition: .2s ease-in;
+    cursor: pointer;
+    .num {
+        color: #F0C60A;
+        font-size: 36px;
+        font-weight: 500;
+        margin-top: 2px;
+         text-align:left;
+        display: inline;
+        line-height: 1;
+        @media (min-width: 320px) and (max-width: 767.98px) {
+           
+            margin-bottom: 20px;
+        }
+    }
+        .term {
+                .term-title {
+            color: #181820;
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 1.24;
+            letter-spacing: -.8px;
+            vertical-align: bottom;
+            @media (min-width: 992px) and (max-width: 1399.98px) {
+              font-size: 29px;
+            }
+        }
+        .term-desc {
+    padding-top: 33.5px;
+    color: #595960;
+    font-size: 18px;
+    line-height: 1.67;
+}
+    }
+    &:hover{
+            background-color: #f9f9fb;
+
+    }
+  }
