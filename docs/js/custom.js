@@ -5,8 +5,6 @@ $('.mobile-slick').slick({
    slidesToScroll: 1,
    arrows:false,
    adaptiveHeight: true,
-   centerPadding: '0px',
-   centerMode:true,
 });
 
     
@@ -60,16 +58,16 @@ $('.aj-team-member').slick({
 
 
 
-// $(window).scroll(function(){
-//     if ($(window).scrollTop() >= 20) {
-//         $('nav').addClass('fixed-header');
-//         $('nav').addClass('position-fixed');
-//     }
-//     else {
-//         $('nav').removeClass('fixed-header');
-//          $('nav').removeClass('position-fixed');
-//     }
-// });
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= 20) {
+        $('nav').addClass('fixed-header');
+        $('nav').addClass('position-fixed');
+    }
+    else {
+        $('nav').removeClass('fixed-header');
+         $('nav').removeClass('position-fixed');
+    }
+});
 
 if ($(window).width() < 760) {
 
