@@ -275,8 +275,11 @@ nav{
   font-weight:400;
   transition : all 0.2s ease-out;
 }
-
+.img-fluid{
+  width:100%;
+}
 @media (min-width: 320px) and (max-width: 767.98px) {
+
     .fixed-header{
         box-shadow: 1px 1px 1px #ccc;
          background: #fff;
@@ -285,6 +288,7 @@ nav{
 
 
 @media (min-width: 768px) and (max-width: 1199.98px) { 
+
  .contact-details{
        max-width: 100%;
        flex: none;
@@ -292,7 +296,7 @@ nav{
     }
     .contact-details-1{
         max-width: 100%;
-       flex: none;
+        flex: none;
     }
 
  }

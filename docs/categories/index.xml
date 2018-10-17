@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on ajency.in</title>
-    <link>https://ajency.github.io/website-design/categories/</link>
+    <link>https://ajency.in/categories/</link>
     <description>Recent content in Categories on ajency.in</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://ajency.github.io/website-design/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ajency.in/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
