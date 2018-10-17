@@ -15,7 +15,7 @@
   <div class="row">
     <div class="col  offset-md-2 col-md-8 col12">
      <p class="body-text">
-     We create quality <strong class="font-weight-bold">software solutions</strong> and great development teams. Self funded or Venture backed (Sequoia,  Google Capital), Idea stage or with legacy code of 7+ years - We've helped them all build and release usable solutions.</p>
+     We create quality software solutions and great development teams. Self funded or Venture backed (Sequoia,  Google Capital), Idea stage or with legacy code of 7+ years - We've helped them all build and release usable solutions.</p>
     </div>
   </div>
 </div>
@@ -103,7 +103,7 @@
        </h5>
       </div>
         <div class="ajency-portfolio portfolio-3">
-          <img src="{{"img/portfolio/growthinvest/homepage-growthinvest.jpg" | absURL}}" alt="London based platform that helps startups raise early stage investment." />
+          <img src="{{"img/DesignDeskMockup.jpg" | absURL}}" alt="Indigo Wine A Wine subscription service for Singapore and Australia." />
        </div>
       </div>
       <div class="items mb-5">
@@ -138,24 +138,24 @@
             </div>
         <div class="col-7">
 
-          <h3 class="modal-title font-weight-bold back" id="exampleModalLabel">Back</h3>
+          <h3 class="modal-title font-weight-bold" id="exampleModalLabel">Back</h3>
         </div>
 
       </div>
     <div class="img-section"> 
           <div class="mobile-slick ">
-              <div>
+            <div style="background:#F8F8F8">
               <div class="mb-3 p-4">
-               <h1 class="ft6">Healthkart.com</h1>
-        <h5 class="font-weight-light">
-        Sequoia backed omnichannel marketplace for health products.
-       </h5>
+                <h1 class="ft6">Healthkart.com</h1>
+                <h5 class="font-weight-light">
+                Sequoia backed omnichannel marketplace for health products.
+               </h5>
              </div>
              <div>
-              <img src="{{"img/portfolio/healthkart/homepage-healthkart-mobile.jpg" | absURL}}"  class="img-fluid">
+              <img src="{{"img/portfolio/healthkart/homepage-healthkart-mobile.jpg" | absURL}}" >
              </div>
             </div>
-          <div style="background:#FFFAF1">
+           <div style="background:#FFFAF1">
               <div class="mb-3 p-4">
                 <h1 class="ft6">Commonfloor.com</h1>
                 <h5 class="font-weight-light">
@@ -163,10 +163,10 @@
                </h5>
              </div>
              <div>
-              <img src="{{"img/portfolio/commonfloor/homepage-commonfloor-mobile.jpg" | absURL}}" class="img-fluid">
+              <img src="{{"img/portfolio/commonfloor/homepage-commonfloor-mobile.jpg" | absURL}}" >
              </div>
             </div>
-          <div style="background:#F5FAFF">
+          <div>
            <div class="mb-3 p-4">
                  <h1 class="ft6">Growthinvest.com</h1>
                 <h5 class="font-weight-light">
@@ -174,7 +174,7 @@
                </h5>
              </div>
              <div>
-              <img src="{{"img/portfolio/growthinvest/homepage-growthinvest-mobile.jpg" | absURL}}" >
+              <img src="{{"img/portfolio/healthkart/homepage-healthkart-mobile.jpg" | absURL}}" >
              </div>
             </div>
              <div>

@@ -1,5 +1,13 @@
 
-
+$('.mobile-slick').slick({
+   infinite: true,
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   arrows:false,
+   adaptiveHeight: true,
+   centerPadding: '0px',
+   centerMode:true,
+});
 
     
 
@@ -88,14 +96,7 @@ $('.pf-weddingz').click(function() {
     $('.mobile-slick').slick('slickGoTo', 3);
     $('body').css("overflow", "hidden");
 });
-$('.mobile-slick').slick({
-   infinite: true,
-   slidesToShow: 1,
-   slidesToScroll: 1,
-   arrows:false,
-   centerPadding: '0px',
-   centerMode:true,
-});
+
   
 $('.back').click(function() {
      $('.scroll-left').removeClass('active');
