@@ -6,13 +6,21 @@ var gulp = require('gulp'),
     csso = require('gulp-csso'),
     prefix = require('gulp-autoprefixer'),
     sass = require('gulp-sass'),
-    browserSync = require('browser-sync').create()
+    browserSync = require('browser-sync').create(),
+    minify = require('gulp-minify');
 
 // Minifies JS
 gulp.task('scripts', function(){
     return gulp.src(['./themes/website-design/static/js/bootstrap.min.js', './themes/website-design/static/js/slick.min.js'])
     .pipe(uglify())
     .pipe(concat('combine.js'))
+    .pipe(gulp.dest('./themes/website-design/static/js'))
+});
+
+gulp.task('compress', function() {
+  gulp.src('./themes/website-design/static/js/custom.js')
+    .pipe(minify())
+    .pipe(concat('custom.min.js'))
     .pipe(gulp.dest('./themes/website-design/static/js'))
 });
 
