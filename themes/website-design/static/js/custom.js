@@ -10,23 +10,23 @@ $('.mobile-slick').slick({
   $('.mobile-slick').on('setPosition', function () {
   jbResizeSlider();
 });
- 
+
 //we need to maintain a set height when a resize event occurs.
 //Some events will through a resize trigger: $(window).trigger('resize');
 $(window).on('resize', function(e) {
   jbResizeSlider();
 });
- 
+
 //since multiple events can trigger a slider adjustment, we will control that adjustment here
 function jbResizeSlider(){
   $slickSlider = $('.mobile-slick');
   $slickSlider.find('.slick-slide').height('auto');
- 
+
   var slickTrack = $slickSlider.find('.slick-track');
   var slickTrackHeight = $(slickTrack).height();
- 
+
   $slickSlider.find('.slick-slide').css('height', slickTrackHeight + 'px');
-}  
+}
 
 jQuery('.variable-width').slick({
       arrows:false,
@@ -56,7 +56,7 @@ jQuery('.variable-width').slick({
     }
   ]
 });
-    
+
 
 jQuery( ".our-work .items" ).hover(
   function() {
@@ -90,42 +90,57 @@ $(window).scroll(function(){
 
 if ($(window).width() < 760) {
 
-$('.pf-healthkart').click(function() {
-     $('.scroll-left').addClass('active');
-    $('.mobile-slick').slick('slickGoTo', 0);
-    $('body').css("overflow", "hidden"); 
+  $('.pf-healthkart').click(function() {
+       $('.scroll-left').addClass('active');
+      $('.mobile-slick').slick('slickGoTo', 0);
+      $('body').css("overflow", "hidden");
 
-      if (history.pushState) {
-          var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?para=hello';
-          window.history.pushState({path:newurl},'',newurl);
-      }
-    
-     // var imgtag = $(this).closest('.items').find(".portfolio-mobile").clone();
-     // $('.img-section').html(imgtag);
-});
-$('.pf-commonfloor').click(function() {
-     $('.scroll-left').addClass('active');
-    $('.mobile-slick').slick('slickGoTo', 1);
-    $('body').css("overflow", "hidden");
-});
-$('.pf-growthinvest').click(function() {
-     $('.scroll-left').addClass('active');
-    $('.mobile-slick').slick('slickGoTo', 2);
-    $('body').css("overflow", "hidden");
-});
-$('.pf-weddingz').click(function() {
-     $('.scroll-left').addClass('active');
-    $('.mobile-slick').slick('slickGoTo', 3);
-    $('body').css("overflow", "hidden");
-});
-
-  
-$('.back').click(function() {
-     $('.scroll-left').removeClass('active');
-     $('body').css("overflow", "scroll"); 
-  $(".scroll-left").animate({ scrollTop: 0 }, "slow");
-  return false;
-
-});
+        if (history.pushState) {
+            var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?para=hello';
+            window.history.pushState({path:newurl},'',newurl);
         }
 
+       // var imgtag = $(this).closest('.items').find(".portfolio-mobile").clone();
+       // $('.img-section').html(imgtag);
+  });
+  $('.pf-commonfloor').click(function() {
+       $('.scroll-left').addClass('active');
+      $('.mobile-slick').slick('slickGoTo', 1);
+      $('body').css("overflow", "hidden");
+  });
+  $('.pf-growthinvest').click(function() {
+       $('.scroll-left').addClass('active');
+      $('.mobile-slick').slick('slickGoTo', 2);
+      $('body').css("overflow", "hidden");
+  });
+  $('.pf-weddingz').click(function() {
+       $('.scroll-left').addClass('active');
+      $('.mobile-slick').slick('slickGoTo', 3);
+      $('body').css("overflow", "hidden");
+  });
+
+
+  $('.back').click(function() {
+       $('.scroll-left').removeClass('active');
+       $('body').css("overflow", "scroll");
+    $(".scroll-left").animate({ scrollTop: 0 }, "slow");
+    return false;
+
+  });
+}
+
+$(window).on("load", function() {
+    jQuery.ready.then(function() {
+      var imgDefer = document.getElementsByTagName('img');
+      for (var i = 0; i < imgDefer.length; i++) {
+          if (imgDefer[i].getAttribute('data-src')) {
+              imgDefer[i].setAttribute('src', imgDefer[i].getAttribute('data-src'));
+              imgDefer[i].setAttribute('srcset', imgDefer[i].getAttribute('data-srcset'));
+              imgDefer[i].setAttribute('sizes', imgDefer[i].getAttribute('data-sizes'));
+              imgDefer[i].removeAttribute('data-src', 'data-srcset', 'data-sizes');
+              imgDefer[i].removeAttribute('data-srcset');
+              imgDefer[i].removeAttribute('data-sizes');
+          }
+      }
+    });
+})
