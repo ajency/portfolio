@@ -4,12 +4,29 @@ $('.mobile-slick').slick({
    slidesToShow: 1,
    slidesToScroll: 1,
    arrows:false,
-   adaptiveHeight: true,
-   centerPadding: '0px',
-   centerMode:true,
+     adaptiveHeight: true
 });
 
-    
+  $('.mobile-slick').on('setPosition', function () {
+  jbResizeSlider();
+});
+ 
+//we need to maintain a set height when a resize event occurs.
+//Some events will through a resize trigger: $(window).trigger('resize');
+$(window).on('resize', function(e) {
+  jbResizeSlider();
+});
+ 
+//since multiple events can trigger a slider adjustment, we will control that adjustment here
+function jbResizeSlider(){
+  $slickSlider = $('.mobile-slick');
+  $slickSlider.find('.slick-slide').height('auto');
+ 
+  var slickTrack = $slickSlider.find('.slick-track');
+  var slickTrackHeight = $(slickTrack).height();
+ 
+  $slickSlider.find('.slick-slide').css('height', slickTrackHeight + 'px');
+}  
 
 jQuery('.variable-width').slick({
       arrows:false,
@@ -60,16 +77,16 @@ $('.aj-team-member').slick({
 
 
 
-// $(window).scroll(function(){
-//     if ($(window).scrollTop() >= 20) {
-//         $('nav').addClass('fixed-header');
-//         $('nav').addClass('position-fixed');
-//     }
-//     else {
-//         $('nav').removeClass('fixed-header');
-//          $('nav').removeClass('position-fixed');
-//     }
-// });
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= 20) {
+        $('nav').addClass('fixed-header');
+        $('nav').addClass('position-fixed');
+    }
+    else {
+        $('nav').removeClass('fixed-header');
+         $('nav').removeClass('position-fixed');
+    }
+});
 
 if ($(window).width() < 760) {
 
@@ -78,6 +95,11 @@ $('.pf-healthkart').click(function() {
     $('.mobile-slick').slick('slickGoTo', 0);
     $('body').css("overflow", "hidden"); 
 
+      if (history.pushState) {
+          var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?para=hello';
+          window.history.pushState({path:newurl},'',newurl);
+      }
+    
      // var imgtag = $(this).closest('.items').find(".portfolio-mobile").clone();
      // $('.img-section').html(imgtag);
 });
@@ -103,6 +125,7 @@ $('.back').click(function() {
      $('body').css("overflow", "scroll"); 
   $(".scroll-left").animate({ scrollTop: 0 }, "slow");
   return false;
+
 });
         }
 

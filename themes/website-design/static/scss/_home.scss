@@ -18,6 +18,12 @@
         }
     }
 }
+.mobile-header{
+        margin:auto;
+        font-style:italic; 
+        text-transform: lowercase;
+        font-family: 'Libre Baskerville', Baskerville, georgia, serif!important;
+}
 .aj-our-work{
             position: absolute;
             right: 0%;
@@ -281,8 +287,7 @@ nav{
 @media (min-width: 320px) and (max-width: 767.98px) {
 
     .fixed-header{
-        box-shadow: 1px 1px 1px #ccc;
-         background: #fff;
+         position: absolute!important;
     }
 }
 
@@ -300,3 +305,6 @@ nav{
     }
 
  }
+
+
+
