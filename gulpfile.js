@@ -18,8 +18,8 @@ gulp.task('scripts', function(){
 });
 
 gulp.task('compress', function() {
-  gulp.src('./themes/website-design/static/js/custom.js')
-    .pipe(minify())
+    return gulp.src('./themes/website-design/static/js/custom.js')
+    .pipe(uglify())
     .pipe(concat('custom.min.js'))
     .pipe(gulp.dest('./themes/website-design/static/js'))
 });
@@ -60,6 +60,7 @@ gulp.task('css', function(){
 
 gulp.task('default', function() {
     gulp.run('scripts')
+    gulp.run('compress')
     gulp.run('css')
 
 });
