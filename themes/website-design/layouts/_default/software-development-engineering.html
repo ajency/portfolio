@@ -22,29 +22,19 @@
 <div>
   </div>
 </section>
-<section class="mt-5 mt-xl-0">
+
+<!-- <section class="mt-5 mt-xl-0">
 <div class="slider variable-width d-flex align-items-center">
         <div >
   <img src="{{"img/gallery-img/ajency-office-tablet.jpg" | absURL}}" alt="Ajency Office Workplace"
   srcset=" {{"img/gallery-img/ajency-office-mobile.jpg" | absURL}} 296w, {{"img/gallery-img/ajency-office-tablet.jpg" | absURL}} 592w, {{"img/gallery-img/ajency-office-desktop.jpg" | absURL}} 1024w"
     sizes="(min-width: 1900px) 80vw,(min-width: 1400px) 70vw,(min-width: 300px) 60vw,  100vw">
         </div>
-        <div class="align-items-center">
+        <div class="align-items-center"> -->
 
-            <img src="{{"img/gallery-img/ajency-team-squad-tablet.jpg" | absURL}}" alt="Ajency Team squad "
-  srcset=" {{"img/gallery-img/ajency-team-squad-mobile.jpg" | absURL}} 296w, {{"img/gallery-img/ajency-team-squad-tablet.jpg" | absURL}} 592w, {{"img/gallery-img/ajency-team-squad-desktop.jpg" | absURL}} 1024w"
-    sizes="(min-width: 1900px) 80vw,(min-width: 1400px) 70vw,(min-width: 300px) 60vw,  100vw">
-    
-        </div>
-        <div >
-                      <img src="{{"img/gallery-img/ajency-located-at-panjim-tablet.jpg" | absURL}}" alt="Ajency located at panjim"
-  srcset=" {{"img/gallery-img/ajency-located-at-panjim-mobile.jpg" | absURL}} 296w, {{"img/gallery-img/ajency-located-at-panjim-tablet.jpg" | absURL}} 592w, {{"img/gallery-img/ajency-located-at-panjim-desktop.jpg" | absURL}} 1024w"
-   sizes="(min-width: 1900px) 80vw,(min-width: 1400px) 70vw,(min-width: 300px) 60vw,  100vw">
 
-        </div>
-     
-      </div>
-</section>
+{{- partial "slider.html" . -}}
+
 <section>
 <div class="container p5">
    <div class="row " id="num-terms-holder ">
@@ -112,7 +102,11 @@
   
        <div class="ajency-portfolio portfolio-1">
   
-          <img src="{{"img/portfolio/healthkart/homepage-healthkart.jpg" | absURL}}" alt=" Sequoia backed omnichannel marketplace for health products." />
+          <!-- <img src="{{"img/portfolio/healthkart/homepage-healthkart.jpg" | absURL}}" alt=" Sequoia backed omnichannel marketplace for health products." /> -->
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E"
+              data-src="{{"img/portfolio/healthkart/Healthkart-Homepage-1536px.jpg" | absURL}}" alt=" Sequoia backed omnichannel marketplace for health products."
+              data-srcset="{{"img/portfolio/healthkart/Healthkart-Homepage-1536px.jpg" | absURL}} 1536w, {{"img/portfolio/healthkart/Healthkart-Homepage-768px.jpg" | absURL}} 768w, {{"img/portfolio/healthkart/Healthkart-Homepage-480px.jpg" | absURL}} 480w"
+              data-sizes="(min-width: 768px) 40vw, 100vw" class="img-fluid">
          
        </div>
       </div>
@@ -124,7 +118,12 @@
        </h5>
        </div>
         <div class="ajency-portfolio portfolio-2">
-          <img src="{{"img/portfolio/commonfloor/homepage-commonfloor.jpg" | absURL}}" alt="Real estate platform with funding from Tiger Global and Google Capital" />
+          <!-- <img src="{{"img/portfolio/commonfloor/homepage-commonfloor.jpg" | absURL}}" alt="Real estate platform with funding from Tiger Global and Google Capital" /> -->
+
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E"
+              data-src="{{"img/portfolio/commonfloor/Commonfloor-Homepage-1536px.jpg" | absURL}}" alt="Real estate platform with funding from Tiger Global and Google Capital"
+              data-srcset="{{"img/portfolio/commonfloor/Commonfloor-Homepage-1536px.jpg" | absURL}} 1536w, {{"img/portfolio/commonfloor/Commonfloor-Homepage-768px.jpg" | absURL}} 768w, {{"img/portfolio/commonfloor/Commonfloor-Homepage-480px.jpg" | absURL}} 480w"
+              data-sizes="(min-width: 768px) 40vw, 100vw" class="img-fluid">
        </div>
       </div>
       <div class="items mb-5">
@@ -135,7 +134,12 @@
        </h5>
       </div>
         <div class="ajency-portfolio portfolio-3">
-          <img src="{{"img/portfolio/growthinvest/homepage-growthinvest.jpg" | absURL}}" alt="London-based platform that helps startups raise early stage investment" />
+          <!-- <img src="{{"img/portfolio/growthinvest/homepage-growthinvest.jpg" | absURL}}" alt="London-based platform that helps startups raise early stage investment" /> -->
+
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E"
+              data-src="{{"img/portfolio/growthinvest/GrowthInvest-Homepage-1536px.jpg" | absURL}}" alt="London-based platform that helps startups raise early stage investment"
+              data-srcset="{{"img/portfolio/growthinvest/GrowthInvest-Homepage-1536px.jpg" | absURL}} 1536w, {{"img/portfolio/growthinvest/GrowthInvest-Homepage-768px.jpg" | absURL}} 768w, {{"img/portfolio/growthinvest/GrowthInvest-Homepage-480px.jpg" | absURL}} 480w"
+              data-sizes="(min-width: 768px) 40vw, 100vw" class="img-fluid">
        </div>
       </div>
       <div class="items mb-5">
@@ -146,9 +150,31 @@
        </h5>
         </div>
         <div class="ajency-portfolio portfolio-4">
-          <img src="{{"img/portfolio/weddingz/Homepage-healthkart.jpg" | absURL}}" alt="Marketplace for the wedding industry. Acquired by Softbank-backed OyoRooms in 2018." />
+          <!-- <img src="{{"img/portfolio/weddingz/Homepage-healthkart.jpg" | absURL}}" alt="Marketplace for the wedding industry. Acquired by Softbank-backed OyoRooms in 2018." /> -->
+
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E"
+              data-src="{{"img/portfolio/weddingz/Weddingz-Homepage-1536px.jpg" | absURL}}" alt="Marketplace for the wedding industry. Acquired by Softbank-backed OyoRooms in 2018."
+              data-srcset="{{"img/portfolio/weddingz/Weddingz-Homepage-1536px.jpg" | absURL}} 1536w, {{"img/portfolio/weddingz/Weddingz-Homepage-768px.jpg" | absURL}} 768w, {{"img/weddingz/growthinvest/Weddingz-Homepage-480w.jpg" | absURL}} 480w"
+              data-sizes="(min-width: 768px) 40vw, 100vw" class="img-fluid">
        </div>
       </div>
+
+      <!-- <div class="items mb-5">
+        <div class="text-black text-link pf-weddingz">
+        <h1 class="ft6">Mylan</h1>
+        <h5 class="font-weight-light">
+        A tele-medicine solution that helps hospitals reduce costs of patient visits. . 
+       </h5>
+        </div>
+        <div class="ajency-portfolio portfolio-4">
+          
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E"
+              data-src="{{"img/portfolio/weddingz/Weddingz-Homepage-1536px.jpg" | absURL}}" alt="Marketplace for the wedding industry. Acquired by Softbank-backed OyoRooms in 2018."
+              data-srcset="{{"img/portfolio/weddingz/Weddingz-Homepage-1536px.jpg" | absURL}} 1536w, {{"img/portfolio/weddingz/Weddingz-Homepage-768px.jpg" | absURL}} 768w, {{"img/weddingz/growthinvest/Weddingz-Homepage-480w.jpg" | absURL}} 480w"
+              data-sizes="(min-width: 768px) 40vw, 100vw" class="img-fluid">
+       </div>
+      </div> -->
+
         <!-- <div class="items">
         <div class="text-black text-link">
         <h1 class="ft6">Weddingz.in</h1>
@@ -184,7 +210,12 @@
        </h5>
              </div>
              <div>
-              <img src="{{"img/portfolio/healthkart/homepage-healthkart-mobile.jpg" | absURL}}"  class="img-fluid">
+              <!-- <img src="{{"img/portfolio/healthkart/homepage-healthkart-mobile.jpg" | absURL}}"  class="img-fluid"> -->
+
+              <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E"
+              data-src="{{"img/portfolio/healthkart/Healthkart-Homepage-1600px.jpg" | absURL}}" alt=""
+              data-srcset="{{"img/portfolio/healthkart/Healthkart-Homepage-1600px.jpg" | absURL}} 1600w, {{"img/portfolio/healthkart/Healthkart-Homepage-800px.jpg" | absURL}} 800w, {{"img/portfolio/healthkart/Healthkart-Homepage-400px.jpg" | absURL}} 400w"
+              data-sizes="100w" class="img-fluid">
              </div>
             </div>
           <div style="background:#FFFAF1">
@@ -195,7 +226,12 @@
                </h5>
              </div>
              <div>
-              <img src="{{"img/portfolio/commonfloor/homepage-commonfloor-mobile.jpg" | absURL}}" class="img-fluid">
+              <!-- <img src="{{"img/portfolio/commonfloor/homepage-commonfloor-mobile.jpg" | absURL}}" class="img-fluid"> -->
+
+              <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E"
+              data-src="{{"img/portfolio/commonfloor/Commonfloor-Homepage-1600px.jpg" | absURL}}" alt=""
+              data-srcset="{{"img/portfolio/commonfloor/Commonfloor-Homepage-1600px.jpg" | absURL}} 1600w, {{"img/portfolio/commonfloor/Commonfloor-Homepage-800px.jpg" | absURL}} 800w, {{"img/portfolio/commonfloor/Commonfloor-Homepage-400px.jpg" | absURL}} 400w"
+              data-sizes="100w" class="img-fluid">
              </div>
             </div>
           <div style="background:#F5FAFF">
@@ -206,7 +242,12 @@
                </h5>
              </div>
              <div>
-              <img src="{{"img/portfolio/growthinvest/homepage-growthinvest-mobile.jpg" | absURL}}" >
+              <!-- <img src="{{"img/portfolio/growthinvest/homepage-growthinvest-mobile.jpg" | absURL}}" > -->
+
+              <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E"
+              data-src="{{"img/portfolio/growthinvest/GrowthInvest-Homepage-1600px.jpg" | absURL}}" alt=""
+              data-srcset="{{"img/portfolio/growthinvest/GrowthInvest-Homepage-1600px.jpg" | absURL}} 1600w, {{"img/portfolio/growthinvest/GrowthInvest-Homepage-800px.jpg" | absURL}} 800w, {{"img/portfolio/growthinvest/GrowthInvest-Homepage-400px.jpg" | absURL}} 400w"
+              data-sizes="100w" class="img-fluid">
              </div>
             </div>
              <div>
@@ -217,9 +258,32 @@
        </h5>
              </div>
              <div>
-              <img src="{{"img/portfolio/healthkart/homepage-healthkart-mobile.jpg" | absURL}}" >
+              <!-- <img src="{{"img/portfolio/healthkart/homepage-healthkart-mobile.jpg" | absURL}}" > -->
+
+              <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E"
+              data-src="{{"img/portfolio/weddingz/Weddingz-Homepage-1600px.jpg" | absURL}}" alt=""
+              data-srcset="{{"img/portfolio/weddingz/Weddingz-Homepage-1600px.jpg" | absURL}} 1600w, {{"img/portfolio/healthkart/Weddingz-Homepage-800px.jpg" | absURL}} 800w, {{"img/portfolio/weddingz/Weddingz-Homepage-400px.jpg" | absURL}} 400w"
+              data-sizes="100w" class="img-fluid">
              </div>
             </div>
+
+           <!-- <div>
+           <div class="mb-3 p-4">
+            <h1 class="ft6">Mylan</h1>
+     <h5 class="font-weight-light">
+     A tele-medicine solution that helps hospitals reduce costs of patient visits.
+    </h5>
+          </div>
+          <div>
+           
+
+           <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E"
+           data-src="{{"img/portfolio/healthkart/Healthkart-Homepage-1600px.jpg" | absURL}}" alt=""
+           data-srcset="{{"img/portfolio/healthkart/Healthkart-Homepage-1600px.jpg" | absURL}} 1600w, {{"img/portfolio/healthkart/Healthkart-Homepage-800px.jpg" | absURL}} 800w, {{"img/portfolio/healthkart/Healthkart-Homepage-400px.jpg" | absURL}} 400w"
+           data-sizes="100w" class="img-fluid">
+          </div>
+         </div> -->
+
       </div>
         </div>
         </div>
@@ -254,60 +318,7 @@
 </div>
 </section>
 
-<section class="p2">
-<div class="container slider-contanier ">
-
-        <div class="aj-team-member  d-flex">
-        <div >
-          <div class="row ">
-            <div class="col-md-6">
-                <img src="https://1z3o6ca02l43rp0zb3y1b2e1-wpengine.netdna-ssl.com/wp-content/uploads/2015/12/a-27.jpg" alt="Ajency Office Workplace" class="img-fluid">
-            </div>
-             <div class="col-md-5 offset-md-1">
-               <div class="w-75 team-desc">
-                        <h5>CEO/Co-founder</h5>
-                        <h1 class="display-3">Anuj Khurana</h1>
-                         <div class="black f-paragraph-small no-spacing"><h5 class="font-weight-light">13+ years of Digital experience.</h5></div>
-                      </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="align-items-center">
-
-             <div class="row flex ">
-            <div class="col-md-6">
-               <img src="https://1z3o6ca02l43rp0zb3y1b2e1-wpengine.netdna-ssl.com/wp-content/uploads/2015/12/a-28.jpg" alt="Ajency Office Workplace" class="img-fluid">
-            </div>
-             <div class="col-md-5 offset-md-1">
-              <div class="w-75 team-desc">
-                        <h5>COO/Co-founder</h5>
-                        <h1 class="display-3">Avanti Hiremath</h1>
-                        <div class="black f-paragraph-small no-spacing"><h5 class="font-weight-light">13+ years in Brand management and Marketing</h5></div>
-                      </div>
-            </div>
-          </div>
-    
-        </div>
-        <div >
-                      <div class="row">
-            <div class="col-md-6">
-               <img src="https://1z3o6ca02l43rp0zb3y1b2e1-wpengine.netdna-ssl.com/wp-content/uploads/2015/12/a-29.jpg" alt="Ajency Office Workplace" class="img-fluid">
-            </div>
-             <div class="col-md-5 offset-md-1">
-               <div class="w-75 team-desc">
-                        <h5>Chief Designer</h5>
-                        <h1 class="display-3">Amit Adav</h1>
-                         <div class="black f-paragraph-small no-spacing"><h5 class="font-weight-light">7+ years in New Media Design.</h5></div>
-                      </div>
-            </div>
-          </div>
-
-        </div>
-     
-      </div>
-</div>
-</section>
+{{- partial "led-by-slider.html" . -}}
 
 <section>
 <div class="container p5">
