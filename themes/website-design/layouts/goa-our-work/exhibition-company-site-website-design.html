@@ -87,10 +87,22 @@
        srcset=" {{"img/portfolio/designdesk/DesignDesk-ExhibtionStand-and-Journey-Section-Design-LargeSize.jpg" | absURL}}  1120w, {{"img/portfolio/designdesk/DesignDesk-ExhibtionStand-and-Journey-Section-Design-MediumSize.jpg" | absURL}} 720w, {{"img/portfolio/designdesk/DesignDesk-ExhibtionStand-and-Journey-Section-Design-SmallSize.jpg" | absURL}}  400w"
        sizes="(min-width: 40em) calc(66.6vw - 4em), 100vw" class="img-fluid"> -->
 
-       <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E"
+       <!-- <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E"
           data-src="{{"img/portfolio/designdesk/DesignDesk-ExhibtionStand-and-Journey-Section-Design-LargeSize.jpg" | absURL}}" alt="Company website for an exhibition design company."
           data-srcset=" {{"img/portfolio/designdesk/DesignDesk-ExhibtionStand-and-Journey-Section-Design-LargeSize.jpg" | absURL}}  1676w, {{"img/portfolio/designdesk/DesignDesk-ExhibtionStand-and-Journey-Section-Design-MediumSize.jpg" | absURL}} 1200w, {{"img/portfolio/designdesk/DesignDesk-ExhibtionStand-and-Journey-Section-Design-SmallSize.jpg" | absURL}}  700w"
-          data-sizes="(min-width: 768px) 60vw,  100vw" class="img-fluid">
+          data-sizes="(min-width: 768px) 60vw,  100vw" class="img-fluid"> -->
+
+          <picture>
+            <source media="(orientation: landscape)" srcset='{{"img/portfolio/designdesk/DesignDesk-ExhibtionStand-and-Journey-Section-Design-LargeSize.jpg" | absURL}}  1676w, {{"img/portfolio/designdesk/DesignDesk-ExhibtionStand-and-Journey-Section-Design-MediumSize.jpg" | absURL}} 1200w, {{"img/portfolio/designdesk/DesignDesk-ExhibtionStand-and-Journey-Section-Design-SmallSize.jpg" | absURL}}  700w,' sizes="100vw">
+
+            <source media="(orientation: portrait)" srcset='{{"img/portfolio/designdesk/DesignDesk-ExhibtionStand-and-Journey-Section-Design-mob-SmallSize.jpg" | absURL}}  700w, {{"img/portfolio/designdesk/DesignDesk-ExhibtionStand-and-Journey-Section-Design-XSmallSize.jpg" | absURL}} 400w' sizes="100vw">
+
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E"
+                data-src="{{"img/portfolio/designdesk/DesignDesk-ExhibtionStand-and-Journey-Section-Design-SmallSize.jpg" | absURL}}"
+                data-srcset="{{"img/portfolio/designdesk/DesignDesk-ExhibtionStand-and-Journey-Section-Design-SmallSize.jpg" | absURL}} 700w"
+                data-sizes="100vw"
+                class="img-fluid" alt="Company website for an exhibition design company.">
+          </picture>
     </div>
   </div>
 </div>
