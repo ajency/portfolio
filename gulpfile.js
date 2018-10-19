@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     csso = require('gulp-csso'),
     prefix = require('gulp-autoprefixer'),
     sass = require('gulp-sass'),
-    browserSync = require('browser-sync').create(),
+    // browserSync = require('browser-sync').create(),
     minify = require('gulp-minify');
 
 // Minifies JS
@@ -33,7 +33,7 @@ gulp.task('sass', function() {
         // Minify the file
         .pipe(csso())
         .pipe(gulp.dest("./themes/website-design/static/css"))
-        .pipe(browserSync.stream());
+        // .pipe(browserSync.stream());
 });
 
 
