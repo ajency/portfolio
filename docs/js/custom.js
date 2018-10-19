@@ -88,7 +88,7 @@ $(window).scroll(function(){
     }
 });
 
-if ($(window).width() < 760) {
+if ($(window).width() < 1198) {
 
   $('.pf-healthkart').click(function() {
        $('.scroll-left').addClass('active');

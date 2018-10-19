@@ -92,11 +92,13 @@ nav{
     font-size: .9rem!important;
     display: inline-flex;
     align-items: center;
+    float:right !important;
     margin-left: auto !important;
     }
     @media (min-width: 768px) and (max-width: 1199.98px) { 
           word-break: break-all;
           font-size: 1.4rem;
+          float:right !important;
     }
     @media (min-width: 768px) and (max-width: 991.98px) { 
           word-break: break-all;
@@ -292,11 +294,16 @@ nav{
 }
 @media (min-width: 768px) and (max-width: 1199.98px) { 
 
-    .fixed-header{
+   body .fixed-header{
          position: absolute!important;
     }
 }
 
+  @media (min-width: 320px) and (max-width: 767.98px) {
+   body .fixed-header{
+         position: absolute!important;
+    }
+}
 
 @media (min-width: 768px) and (max-width: 1199.98px) { 
 
