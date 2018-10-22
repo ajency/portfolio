@@ -118,7 +118,11 @@ if ($(window).width() < 1198) {
       $('.mobile-slick').slick('slickGoTo', 3);
       $('body').css("overflow", "hidden");
   });
-
+  $('.pf-mylan').click(function() {
+       $('.scroll-left').addClass('active');
+      $('.mobile-slick').slick('slickGoTo', 4);
+      $('body').css("overflow", "hidden");
+  });
 
   $('.back').click(function() {
        $('.scroll-left').removeClass('active');
