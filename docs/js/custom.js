@@ -126,6 +126,7 @@ if ($(window).width() < 1198) {
 
   $('.back').click(function() {
        $('.scroll-left').removeClass('active');
+        $('div[id^=showdiv]').removeClass("highlight");
        $('body').css("overflow", "scroll");
     $(".scroll-left").animate({ scrollTop: 0 }, "slow");
     return false;
@@ -133,6 +134,46 @@ if ($(window).width() < 1198) {
   });
 }
 
+$('#showdiv1').click(function(){
+    $('div[id^=div]').hide();
+    $('#div1').show();
+    $('div[id^=showdiv]').removeClass("highlight");
+    $('#showdiv1').addClass("highlight");
+
+});
+$('#showdiv2').click(function(){
+    $('div[id^=div]').hide();
+    $('#div2').show();
+    $('div[id^=showdiv]').removeClass("highlight");
+    $('#showdiv2').addClass("highlight");
+});
+
+$('#showdiv3').click(function(){
+    $('div[id^=div]').hide();
+    $('#div3').show();
+    $('div[id^=showdiv]').removeClass("highlight");
+    $('#showdiv3').addClass("highlight");
+});
+
+$('#showdiv4').click(function(){
+    $('div[id^=div]').hide();
+    $('#div4').show();
+     $('div[id^=showdiv]').removeClass("highlight");
+    $('#showdiv4').addClass("highlight");
+
+});
+$('#showdiv5').click(function(){
+    $('div[id^=div]').hide();
+    $('#div5').show();
+     $('div[id^=showdiv]').removeClass("highlight");
+    $('#showdiv5').addClass("highlight");
+
+});
+$('.close').click(function(){
+    $('div[id^=div]').hide();
+     $('div[id^=showdiv]').removeClass("highlight");
+
+});
 $(window).on("load", function() {
     jQuery.ready.then(function() {
       var imgDefer = document.getElementsByTagName('img');

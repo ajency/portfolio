@@ -336,5 +336,26 @@ nav{
 
  }
 
+#div1, #div2, #div3, #div4, #div5{
+    display: none;
+    position: absolute;
+    right: 0px;
+    z-index: 99999;
+    top: 0px;
+    .close{
+    position: absolute;
+    right: 0px;
+    top: -34px;
+    font-size: 1.2rem;
+    }
+     @media (min-width: 320px) and (max-width: 767.98px) {
+        display:none !important;
+     }
+   @media (min-width: 768px) and (max-width: 1199.98px) { 
+        display:none!important;
+    }
 
-
+} 
+.highlight h5{
+            border-bottom: 2px solid #f2cd05 !important;
+        }
