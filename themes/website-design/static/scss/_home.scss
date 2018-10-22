@@ -108,9 +108,19 @@ nav{
 .slick-slide {
     margin-left: 100px;
     cursor: -webkit-grab;
-    @media (min-width: 320px) and (max-width: 767.98px) {
+    @media (min-width: 400px) and (max-width: 767.98px) {
       margin-left: 40px;
     }
+    @media (max-width: 400px) {
+      margin-left: 30px;
+    }
+    @media (max-width: 360px) {
+      margin-left: 20px;
+    }
+}
+
+.slick-slide {
+
 }
 .slick-track{
     align-items: center!important;
@@ -127,7 +137,14 @@ nav{
          }
           @media (min-width: 320px) and (max-width: 767.98px) {
                
-          width:296px;
+          width:297px;
+              }
+              @media (max-width: 400px) {
+                width: 280px;
+              }
+
+              @media (max-width: 360px) {
+                width: 265px;
               }
 
     }
