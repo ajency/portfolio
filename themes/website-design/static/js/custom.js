@@ -4,11 +4,11 @@ $('.mobile-slick').slick({
    slidesToShow: 1,
    slidesToScroll: 1,
    arrows:false,
-     adaptiveHeight: true
+   adaptiveHeight: true
 });
 
   $('.mobile-slick').on('setPosition', function () {
-  jbResizeSlider();
+  // jbResizeSlider();
 });
 
 //we need to maintain a set height when a resize event occurs.
