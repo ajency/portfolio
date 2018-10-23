@@ -13,20 +13,20 @@ $('.mobile-slick').slick({
 
 //we need to maintain a set height when a resize event occurs.
 //Some events will through a resize trigger: $(window).trigger('resize');
-$(window).on('resize', function(e) {
-  jbResizeSlider();
-});
+// $(window).on('resize', function(e) {
+//   jbResizeSlider();
+// });
 
 //since multiple events can trigger a slider adjustment, we will control that adjustment here
-function jbResizeSlider(){
-  $slickSlider = $('.mobile-slick');
-  $slickSlider.find('.slick-slide').height('auto');
+// function jbResizeSlider(){
+//   $slickSlider = $('.mobile-slick');
+//   $slickSlider.find('.slick-slide').height('auto');
 
-  var slickTrack = $slickSlider.find('.slick-track');
-  var slickTrackHeight = $(slickTrack).height();
+//   var slickTrack = $slickSlider.find('.slick-track');
+//   var slickTrackHeight = $(slickTrack).height();
 
-  $slickSlider.find('.slick-slide').css('height', slickTrackHeight + 'px');
-}
+//   $slickSlider.find('.slick-slide').css('height', slickTrackHeight + 'px');
+// }
 
 jQuery('.variable-width').slick({
       arrows:false,
