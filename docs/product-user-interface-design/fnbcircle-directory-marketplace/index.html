@@ -100,9 +100,18 @@
 <div class="container p5">
   <div class="row">
     <div class="col  offset-xl-2 col-xl-8 col12">
-      <img src="https://ajency.github.io/website-design/img/portfolio/fnb/fnb-listview-10px.jpg"
-          data-srcset=" https://ajency.github.io/website-design/img/portfolio/fnb/fnb-listview-large.jpg  1676w, https://ajency.github.io/website-design/img/portfolio/fnb/fnb-listview-medium.jpg 1200w, https://ajency.github.io/website-design/img/portfolio/fnb/fnb-listview-small.jpg  700w"
-          data-sizes="(min-width: 768px) 60vw,  100vw" class="img-fluid lazyload blur-up">
+      
+
+        <picture>
+          <source media="(orientation: landscape)" data-srcset='https://ajency.github.io/website-design/img/portfolio/fnb/fnb-listview-large.jpg  1676w, https://ajency.github.io/website-design/img/portfolio/fnb/fnb-listview-medium.jpg 1200w', sizes="100vw">
+
+          <source media="(orientation: portrait)" data-srcset='https://ajency.github.io/website-design/img/portfolio/fnb/fnb-listview-small.jpg  700w', sizes="100vw">
+
+          <img src="https://ajency.github.io/website-design/img/portfolio/fnb/fnb-listview-10px.jpg"
+              
+              data-sizes="100vw"
+              class="img-fluid lazyload blur-up" alt="">
+        </picture>
     </div>
   </div>
 </div>
