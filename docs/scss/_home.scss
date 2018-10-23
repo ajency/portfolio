@@ -131,6 +131,13 @@ nav{
     }
   }
 }
+.variable-width{
+  opacity: 0;
+  &.slick-initialized{
+    opacity: 1;
+  }
+}
+
 .slick-track{
     img{
         width:890px;

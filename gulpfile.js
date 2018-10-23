@@ -11,7 +11,9 @@ var gulp = require('gulp'),
 
 // Minifies JS
 gulp.task('scripts', function(){
-    return gulp.src(['./themes/website-design/static/js/bootstrap.min.js', './themes/website-design/static/js/slick.min.js'])
+    return gulp.src(['./themes/website-design/static/js/bootstrap.min.js',
+        './themes/website-design/static/js/lazysizes.min.js',
+        './themes/website-design/static/js/slick.min.js'])
     .pipe(uglify())
     .pipe(concat('combine.js'))
     .pipe(gulp.dest('./themes/website-design/static/js'))
