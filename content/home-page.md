@@ -5,5 +5,5 @@ draft: false
 layout: home-page
 url: /home-page/
 
-
+metaHomePage: true
 ---
