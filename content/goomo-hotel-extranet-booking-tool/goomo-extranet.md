@@ -5,5 +5,6 @@ draft: false
 layout: goomo-extranet
 url: /product-user-interface-design/goomo-hotel-extranet-booking-tool/
 
-
+metaGoomoExtranet: true
+metaHome: true
 ---

@@ -5,5 +5,6 @@ draft: false
 layout: mrupee
 url: /product-user-interface-design/tata-group-mobile-wallet-mrupee/
 
-
+metaMrupee: true
+metaHome: true
 ---

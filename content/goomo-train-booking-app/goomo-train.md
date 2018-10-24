@@ -5,5 +5,6 @@ draft: false
 layout: goomo-train
 url: /product-user-interface-design/goomo-train-booking-app/
 
-
+metaGoomotrain: true
+metaHome: true
 ---

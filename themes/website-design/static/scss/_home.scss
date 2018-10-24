@@ -64,6 +64,9 @@
         width: 125px !important;
         float: left !important;
     }
+    @media (min-width: 992px) and (max-width: 1399.98px) {
+       float: left !important;
+    }
     @media (min-width: 768px) and (max-width: 991.98px) {
         width: 110px;
     }
@@ -368,6 +371,16 @@ nav {
         font-size:1.6rem;
         line-height: 2.7rem;
     }
+     @media (min-width: 992px) and (max-width: 1399.98px) {
+        line-height: 4rem;
+        font-size: 2.9rem;
+        h3{
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+
+        }
+    }
+    
     .clutch {
         display: inline-block;
         position: relative;
