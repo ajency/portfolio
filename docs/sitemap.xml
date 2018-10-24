@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ajency.github.io/website-design/home-page/</loc>
-    <lastmod>2018-06-04T12:57:20+05:30</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ajency.github.io/website-design/404/</loc>
     <lastmod>2018-06-04T12:57:20+05:30</lastmod>
   </url>
@@ -24,6 +19,11 @@
   
   <url>
     <loc>https://ajency.github.io/website-design/software-development-engineering/</loc>
+    <lastmod>2018-06-04T12:57:20+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/website-design/home-page/</loc>
     <lastmod>2018-06-04T12:57:20+05:30</lastmod>
   </url>
   
