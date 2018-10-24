@@ -2,7 +2,7 @@
 .ajency-portfolio{
         position: absolute;
         right: 10px;
-        z-index: 99999;
+        z-index: 2;
         opacity: 0;
         transition: all 0.5s ease;
         width:40vw;
@@ -30,6 +30,9 @@
             top: 340px;
 }
 .items{
+cursor:pointer;
+ .site-name{
+    display:inline-block;
     cursor: pointer;
         h5{
             border-bottom: 2px solid #fff;
@@ -59,11 +62,15 @@
         .portfolio-4{
             top: 0px;
         }
+        ~ .aj-our-work{
+            opacity:0px;
+        }
     }
+  }
 }
 .our-work{
     .items{
-        width: 29vw;
+        width: 26vw;
         @media (min-width: 320px) and (max-width: 767.98px) {
            width: 100%;
          }

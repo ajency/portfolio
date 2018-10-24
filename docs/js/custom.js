@@ -58,7 +58,7 @@ jQuery('.variable-width').slick({
 });
 
 
-jQuery( ".our-work .items" ).hover(
+jQuery( ".aj-home .items" ).hover(
   function() {
     $( '.aj-our-work' ).addClass( "invisible" );
   }, function() {
