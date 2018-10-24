@@ -2,10 +2,10 @@
 .ajency-portfolio{
         position: absolute;
         right: 10px;
-        z-index: 2;
         opacity: 0;
         transition: all 0.5s ease;
         width:40vw;
+
     img{
         width: 100%;
     }
@@ -48,7 +48,9 @@ cursor:pointer;
             opacity:0;
         }
         .ajency-portfolio{
+         z-index: 9999999;
             opacity:1;
+
         }
         .portfolio-1{
             top: 0px;
